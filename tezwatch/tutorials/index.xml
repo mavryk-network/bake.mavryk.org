@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docs.tez.capital – Tutorials</title>
-    <link>/tezwatch/tutorials/</link>
-    <description>Recent content in Tutorials on docs.tez.capital</description>
+    <title>bake.mavryk.org – Tutorials</title>
+    <link>/mavwatch/tutorials/</link>
+    <description>Recent content in Tutorials on bake.mavryk.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>tez.capital</copyright>
+    <copyright>Mavryk Dynamics</copyright>
     
-	  <atom:link href="/tezwatch/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/mavwatch/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,16 +17,16 @@
     
     <item>
       <title>Tezwatch: &gt; How to Setup</title>
-      <link>/tezwatch/tutorials/how-to-setup/</link>
+      <link>/mavwatch/tutorials/how-to-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tezwatch/tutorials/how-to-setup/</guid>
+      <guid>/mavwatch/tutorials/how-to-setup/</guid>
       <description>
         
         
         &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 &lt;p&gt;Setting up TezWatch currently requires you to have a &lt;a href=&#34;https://Discord.com&#34;&gt;https://Discord.com&lt;/a&gt; account. If you don&amp;rsquo;t have one, please create one before proceeding.&lt;/p&gt;
-&lt;p&gt;You will also need to join our &lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt;. This is where you will configure TezWatch. You can also ask questions and get support from the Tez Capital team and other Tezos bakers, stakers and delegators. After you join, make sure to self-select the &amp;ldquo;TezBake&amp;rdquo; role in order to get access to the &lt;a href=&#34;https://discord.gg/94dnM2AcRw&#34;&gt;#tezwatch&lt;/a&gt; channel.&lt;/p&gt;
+&lt;p&gt;You will also need to join our &lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt;. This is where you will configure TezWatch. You can also ask questions and get support from the Mavryk Dynamics team and other Mavryk bakers, stakers and delegators. After you join, make sure to self-select the &amp;ldquo;MavBake&amp;rdquo; role in order to get access to the &lt;a href=&#34;https://discord.gg/94dnM2AcRw&#34;&gt;#mavwatch&lt;/a&gt; channel.&lt;/p&gt;
 &lt;p&gt;The idea here is to have the Discord mobile app on your phone and/or the Discord desktop app on your computer. You will need to be logged in to your Discord account on the device you want to receive notifications on. TezWatch will use Discord to tag you in a DM (Direct Message) based on your configuration. For example, you may not care if you miss a single attestation but you care if you miss 10 attestation in a row or a block.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you want to remain anonymous, you can create a new Discord account and join our Discord server using that account. Then you can DM the TezWatch bot from that account and what with it in private.&lt;/p&gt;
@@ -34,11 +34,11 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;setup-and-configuration-of-baker-performance-monitoring&#34;&gt;Setup and configuration of baker performance monitoring&lt;/h2&gt;
 &lt;p&gt;The whole setup and configuration process currently takes very little time as the features are limited. We are working on adding more features and more platforms. If you have any suggestions, please let us know on &lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The setup is done using slash commands, which means just type the &lt;code&gt;/&lt;/code&gt; character in the chat in the #tezwatch channel and you will see a list of available commands for the TezWatch bot.&lt;/p&gt;
+&lt;p&gt;The setup is done using slash commands, which means just type the &lt;code&gt;/&lt;/code&gt; character in the chat in the #mavwatch channel and you will see a list of available commands for the TezWatch bot.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchSlashCommands.png&#34; alt=&#34;&amp;lt;Nagivate to #tezwatch channel and discover all Slash commands&amp;gt;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchSlashCommands.png&#34; alt=&#34;&amp;lt;Nagivate to #mavwatch channel and discover all Slash commands&amp;gt;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
@@ -46,7 +46,7 @@
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchSlashEvents.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchSlashEvents.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
@@ -72,40 +72,40 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;conditions&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv,tz1S5WxdZR5f9NzsPXhr7L9L1vrEb5spZFur&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This is a comma-separated list of Tezos addresses that you want to be notified for&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE,mv1Jx2M1gXNUkw1NMdf3iuCzVuqfcwLDkpAs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;This is a comma-separated list of Mavryk addresses that you want to be notified for&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Please note that some TezWatch features are considered premium and will in the future require a subscription. The freemium features indicated as TIER 0 will always be available for free to the Tezos ecosystem.&lt;/p&gt;
+&lt;p&gt;Please note that some TezWatch features are considered premium and will in the future require a subscription. The freemium features indicated as TIER 0 will always be available for free to the Mavryk ecosystem.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;Here&amp;rsquo;s an example command to subscribe to notifications for a missed attestation or missed block for a specific baker:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchSlashCommandExample.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchSlashCommandExample.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;p&gt;Any questions/comments/concerns? Please contact the Tez Capital team on
+&lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
 &lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Tezwatch: How to Monitor Tezos Balances and Transactions</title>
-      <link>/tezwatch/tutorials/how-to-monitor-balances-and-transactions/</link>
+      <title>Tezwatch: How to Monitor Mavryk Balances and Transactions</title>
+      <link>/mavwatch/tutorials/how-to-monitor-balances-and-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tezwatch/tutorials/how-to-monitor-balances-and-transactions/</guid>
+      <guid>/mavwatch/tutorials/how-to-monitor-balances-and-transactions/</guid>
       <description>
         
         
-        &lt;h2 id=&#34;how-to-monitor-tezos-balances-and-transactions-with-tezwatch&#34;&gt;How to monitor Tezos balances and transactions with TezWatch&lt;/h2&gt;
+        &lt;h2 id=&#34;how-to-monitor-mavryk-balances-and-transactions-with-mavwatch&#34;&gt;How to monitor Mavryk balances and transactions with TezWatch&lt;/h2&gt;
 &lt;p&gt;Using TezWatch you can keep an eye on transactions to and from baker wallets or baker payment wallets with flexibility.&lt;/p&gt;
 &lt;p&gt;You can monitor some of the following aspects:&lt;/p&gt;
 &lt;ul&gt;
@@ -119,7 +119,7 @@
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchSlashEvents.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchSlashEvents.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
@@ -145,55 +145,55 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;conditions&lt;/code&gt; for transfers&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv:in&lt;/code&gt;, &lt;code&gt;tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv:in&amp;gt;1&lt;/code&gt;, &lt;code&gt;tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv:50&amp;gt;in&amp;gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE:in&lt;/code&gt;, &lt;code&gt;mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE:in&amp;gt;1&lt;/code&gt;, &lt;code&gt;mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE:50&amp;gt;in&amp;gt;1&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Be nofified for all incoming transactions, all incoming transactions over 1 or all transactions smaller than 1 but larger than 50&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;conditions&lt;/code&gt; for balance-updated&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv:50&amp;gt;balance&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE:50&amp;gt;balance&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Be nofidied for all incoming transactions, all incoming transactions over X or all transactions smaller than X but larger than Y&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Please note that some TezWatch features are considered premium and will in the future require a subscription. The freemium features indicated as TIER 0 will always be available for free to the Tezos ecosystem.&lt;/p&gt;
+&lt;p&gt;Please note that some TezWatch features are considered premium and will in the future require a subscription. The freemium features indicated as TIER 0 will always be available for free to the Mavryk ecosystem.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;transfers-examples&#34;&gt;Transfers Examples&lt;/h3&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of subscribing to all incoming transactions to the wallet tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of subscribing to all incoming transactions to the wallet mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchIncoming.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchIncoming.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of subscribing to incoming transactions to the wallet tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv of over 1 tez&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of subscribing to incoming transactions to the wallet mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE of over 1 mav&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchIncomingMore1.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchIncomingMore1.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of subscribing to incoming transactions to the wallet tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv of over 1 tez but less than 50 tez&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of subscribing to incoming transactions to the wallet mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE of over 1 mav but less than 50 mav&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchIncomingMore1Less50.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchIncomingMore1Less50.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;balances-example&#34;&gt;Balances Example&lt;/h3&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of subscribing to the wallet tz1UGkfyrT9yBt6U5PV7Qeui3pt3a8jffoWv&amp;rsquo;s balance being below 50 tez.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of subscribing to the wallet mv1KV2yn8Q4vzP8eNHCcPwk97fsRehfMz4xE&amp;rsquo;s balance being below 50 mav.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/tezwatch/tutorial/tezwatchBalance50.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavwatch/tutorial/mavwatchBalance50.png&#34; alt=&#34;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;p&gt;Any questions/comments/concerns? Please contact the Tez Capital team on
+&lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
 &lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>

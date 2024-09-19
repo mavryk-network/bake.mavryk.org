@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/__w/docs.tez.capital_builder/docs.tez.capital_builder",
+	"sourceRoot": "/__w/bake.mavryk.org_builder/bake.mavryk.org_builder",
 	"sources": [
 		"/tmp/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.5.1/assets/scss/main.scss",
 		"../../../tmp/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.5.1/assets/scss/support/_functions.scss",

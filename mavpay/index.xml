@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bake.mavryk.org – MavPay</title>
+    <link>/mavpay/</link>
+    <description>Recent content in MavPay on bake.mavryk.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mavryk Dynamics</copyright>
+    
+	  <atom:link href="/mavpay/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docs.tez.capital – Categories</title>
+    <title>bake.mavryk.org – Categories</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on docs.tez.capital</description>
+    <description>Recent content in Categories on bake.mavryk.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>tez.capital</copyright>
+    <copyright>Mavryk Dynamics</copyright>
     
 	  <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     

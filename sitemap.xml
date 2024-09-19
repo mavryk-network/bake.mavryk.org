@@ -2,151 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tezbake/tutorials/how-to-bake/</loc>
+    <loc>/mavbake/tutorials/how-to-bake/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/how-to-setup/</loc>
+    <loc>/mavpay/tutorials/how-to-setup/</loc>
   </url><url>
-    <loc>/tezwatch/tutorials/how-to-setup/</loc>
+    <loc>/mavwatch/tutorials/how-to-setup/</loc>
   </url><url>
-    <loc>/tezgov/tutorials/how-to-vote/</loc>
+    <loc>/mavgov/tutorials/how-to-vote/</loc>
   </url><url>
     <loc>/getting-started/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-bake-ghostnet/</loc>
+    <loc>/mavbake/tutorials/how-to-bake-ghostnet/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-bake-docker/</loc>
+    <loc>/mavbake/tutorials/how-to-bake-docker/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-bake-gui/</loc>
+    <loc>/mavbake/tutorials/how-to-bake-gui/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-bootstrap/</loc>
+    <loc>/mavbake/tutorials/how-to-bootstrap/</loc>
   </url><url>
-    <loc>/tezgov/tutorials/how-to-inject-proposals/</loc>
+    <loc>/mavgov/tutorials/how-to-inject-proposals/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-monitor/</loc>
+    <loc>/mavbake/tutorials/how-to-monitor/</loc>
   </url><url>
-    <loc>/tezwatch/tutorials/how-to-monitor-balances-and-transactions/</loc>
+    <loc>/mavwatch/tutorials/how-to-monitor-balances-and-transactions/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/how-to-pay/</loc>
+    <loc>/mavpay/tutorials/how-to-pay/</loc>
   </url><url>
-    <loc>/tezgov/tutorials/how-to-set-deposits-limit/</loc>
+    <loc>/mavgov/tutorials/how-to-set-deposits-limit/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/how-to-notify/</loc>
+    <loc>/mavpay/tutorials/how-to-notify/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/how-to-setup-gui/</loc>
+    <loc>/mavpay/tutorials/how-to-setup-gui/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-troubleshoot/</loc>
+    <loc>/mavbake/tutorials/how-to-troubleshoot/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/how-to-update/</loc>
+    <loc>/mavbake/tutorials/how-to-update/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/how-to-update/</loc>
+    <loc>/mavpay/tutorials/how-to-update/</loc>
   </url><url>
     <loc>/</loc>
   </url><url>
-    <loc>/tezbake/</loc>
+    <loc>/mavbake/</loc>
   </url><url>
-    <loc>/tezgov/</loc>
+    <loc>/mavgov/</loc>
   </url><url>
     <loc>/getting-started/best-practices/</loc>
   </url><url>
     <loc>/getting-started/public-baking/</loc>
   </url><url>
-    <loc>/tezpay/</loc>
+    <loc>/mavpay/</loc>
   </url><url>
-    <loc>/tezwatch/</loc>
+    <loc>/mavwatch/</loc>
   </url><url>
-    <loc>/tezbake/tutorials/</loc>
+    <loc>/mavbake/tutorials/</loc>
   </url><url>
-    <loc>/tezgov/tutorials/</loc>
+    <loc>/mavgov/tutorials/</loc>
   </url><url>
-    <loc>/tezpay/tutorials/</loc>
+    <loc>/mavpay/tutorials/</loc>
   </url><url>
-    <loc>/tezwatch/tutorials/</loc>
+    <loc>/mavwatch/tutorials/</loc>
   </url><url>
     <loc>/getting-started/what-is-baking/</loc>
   </url><url>
-    <loc>/tezpay/configuration/</loc>
+    <loc>/mavpay/configuration/</loc>
   </url><url>
-    <loc>/tezpay/extensions/</loc>
+    <loc>/mavpay/extensions/</loc>
   </url><url>
-    <loc>/tezpay/configuration/examples/default/</loc>
+    <loc>/mavpay/configuration/examples/default/</loc>
   </url><url>
-    <loc>/tezpay/extensions/reference/hooks/</loc>
+    <loc>/mavpay/extensions/reference/hooks/</loc>
   </url><url>
-    <loc>/tezbake/reference/</loc>
+    <loc>/mavbake/reference/</loc>
   </url><url>
-    <loc>/tezpay/reference/</loc>
+    <loc>/mavpay/reference/</loc>
   </url><url>
-    <loc>/tezpay/configuration/examples/sample/</loc>
+    <loc>/mavpay/configuration/examples/sample/</loc>
   </url><url>
-    <loc>/tezpay/configuration/examples/starter/</loc>
+    <loc>/mavpay/configuration/examples/starter/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake/</loc>
+    <loc>/mavbake/reference/cmd/mavbake/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_apps/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_apps/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_bootstrap-node/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_bootstrap-node/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_erase-ami-cache/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_erase-ami-cache/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_get-rights/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_get-rights/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_import-key/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_import-key/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_info/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_info/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_list-ledgers/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_list-ledgers/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_modules/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_modules/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_node/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_node/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_peak/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_peak/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_register-key/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_register-key/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_remove/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_remove/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_setup/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_setup/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_setup-ami/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_setup-ami/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_setup-ledger/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_setup-ledger/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_signer/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_signer/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_start/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_start/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_stop/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_stop/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_upgrade/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_upgrade/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_version/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_version/</loc>
   </url><url>
-    <loc>/tezbake/reference/cmd/tezbake_vote/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_vote/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay/</loc>
+    <loc>/mavpay/reference/cmd/mavpay/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_continual/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_continual/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_generate-payouts/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_generate-payouts/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_import-configuration/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_import-configuration/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_pay/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_pay/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_pay-date-range/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_pay-date-range/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_statistics/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_statistics/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_test-extension/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_test-extension/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_test-extensions/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_test-extensions/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_test-notify/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_test-notify/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_transfer/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_transfer/</loc>
   </url><url>
-    <loc>/tezpay/reference/cmd/tezpay_version/</loc>
+    <loc>/mavpay/reference/cmd/mavpay_version/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
