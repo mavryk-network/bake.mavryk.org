@@ -16,7 +16,7 @@
     
     
     <item>
-      <title>Tezpay: default</title>
+      <title>Mavpay: default</title>
       <link>/mavpay/configuration/examples/default/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -59,7 +59,7 @@
     </item>
     
     <item>
-      <title>Tezpay: sample</title>
+      <title>Mavpay: sample</title>
       <link>/mavpay/configuration/examples/sample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -334,7 +334,7 @@
     </item>
     
     <item>
-      <title>Tezpay: starter</title>
+      <title>Mavpay: starter</title>
       <link>/mavpay/configuration/examples/starter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

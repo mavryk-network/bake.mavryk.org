@@ -16,7 +16,7 @@
     
     
     <item>
-      <title>Tezbake: mavbake</title>
+      <title>Mavbake: mavbake</title>
       <link>/mavbake/reference/cmd/mavbake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,7 +61,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_apps</title>
+      <title>Mavbake: mavbake_apps</title>
       <link>/mavbake/reference/cmd/mavbake_apps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -90,7 +90,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_bootstrap-node</title>
+      <title>Mavbake: mavbake_bootstrap-node</title>
       <link>/mavbake/reference/cmd/mavbake_bootstrap-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -120,7 +120,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_erase-ami-cache</title>
+      <title>Mavbake: mavbake_erase-ami-cache</title>
       <link>/mavbake/reference/cmd/mavbake_erase-ami-cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -149,7 +149,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_get-rights</title>
+      <title>Mavbake: mavbake_get-rights</title>
       <link>/mavbake/reference/cmd/mavbake_get-rights/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -179,7 +179,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_import-key</title>
+      <title>Mavbake: mavbake_import-key</title>
       <link>/mavbake/reference/cmd/mavbake_import-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -214,7 +214,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_info</title>
+      <title>Mavbake: mavbake_info</title>
       <link>/mavbake/reference/cmd/mavbake_info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -260,7 +260,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_list-ledgers</title>
+      <title>Mavbake: mavbake_list-ledgers</title>
       <link>/mavbake/reference/cmd/mavbake_list-ledgers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -289,7 +289,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_modules</title>
+      <title>Mavbake: mavbake_modules</title>
       <link>/mavbake/reference/cmd/mavbake_modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -318,7 +318,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_node</title>
+      <title>Mavbake: mavbake_node</title>
       <link>/mavbake/reference/cmd/mavbake_node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -347,7 +347,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_peak</title>
+      <title>Mavbake: mavbake_peak</title>
       <link>/mavbake/reference/cmd/mavbake_peak/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -376,7 +376,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_register-key</title>
+      <title>Mavbake: mavbake_register-key</title>
       <link>/mavbake/reference/cmd/mavbake_register-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -405,7 +405,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_remove</title>
+      <title>Mavbake: mavbake_remove</title>
       <link>/mavbake/reference/cmd/mavbake_remove/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -439,7 +439,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_setup</title>
+      <title>Mavbake: mavbake_setup</title>
       <link>/mavbake/reference/cmd/mavbake_setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -495,7 +495,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_setup-ami</title>
+      <title>Mavbake: mavbake_setup-ami</title>
       <link>/mavbake/reference/cmd/mavbake_setup-ami/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -525,7 +525,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_setup-ledger</title>
+      <title>Mavbake: mavbake_setup-ledger</title>
       <link>/mavbake/reference/cmd/mavbake_setup-ledger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -566,7 +566,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_signer</title>
+      <title>Mavbake: mavbake_signer</title>
       <link>/mavbake/reference/cmd/mavbake_signer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -595,7 +595,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_start</title>
+      <title>Mavbake: mavbake_start</title>
       <link>/mavbake/reference/cmd/mavbake_start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -628,7 +628,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_stop</title>
+      <title>Mavbake: mavbake_stop</title>
       <link>/mavbake/reference/cmd/mavbake_stop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -661,7 +661,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_upgrade</title>
+      <title>Mavbake: mavbake_upgrade</title>
       <link>/mavbake/reference/cmd/mavbake_upgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -696,7 +696,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_version</title>
+      <title>Mavbake: mavbake_version</title>
       <link>/mavbake/reference/cmd/mavbake_version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -732,7 +732,7 @@ Copyright © 2024 Mavryk Dynamics&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezbake: mavbake_vote</title>
+      <title>Mavbake: mavbake_vote</title>
       <link>/mavbake/reference/cmd/mavbake_vote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

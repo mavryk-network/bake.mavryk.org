@@ -16,7 +16,7 @@
     
     
     <item>
-      <title>Tezpay: &gt; How to Setup</title>
+      <title>Mavpay: &gt; How to Setup</title>
       <link>/mavpay/tutorials/how-to-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -31,7 +31,7 @@ you have a functioning public baker running.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a directory (folder) on your desktop (or appropriate
 location) to store the application files and required config files&lt;/li&gt;
-&lt;li&gt;Download the Tezpay software, sample configuration, and payout
+&lt;li&gt;Download the Mavpay software, sample configuration, and payout
 wallet files from github&lt;/li&gt;
 &lt;li&gt;Create a &amp;lsquo;pay-out&amp;rsquo; wallet and store the private key (not baker or
 hot wallet)&lt;/li&gt;
@@ -39,11 +39,11 @@ hot wallet)&lt;/li&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;preparation-step-1-create-mavpay-directory&#34;&gt;Preparation: Step 1 &lt;em&gt;Create MavPay Directory&lt;/em&gt;&lt;/h3&gt;
 &lt;p&gt;Create a new folder on the desktop or in a location that you want
-to store the necessary files for Tezpay.&lt;/p&gt;
+to store the necessary files for Mavpay.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/mavpay/tutorial/mavpayImage1.png&#34; alt=&#34;&amp;lt;Newly created MavPay directory, will contain all files for Tezpay Application.&amp;gt;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavpay/tutorial/mavpayImage1.png&#34; alt=&#34;&amp;lt;Newly created MavPay directory, will contain all files for Mavpay Application.&amp;gt;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
@@ -106,9 +106,9 @@ you can open file in GitHub and copy text to a text editor&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note, there are two choices for the configuration files&lt;/em&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Simple Config file : config.default.hjson (basic arguments to run
-Tezpay)&lt;/li&gt;
+Mavpay)&lt;/li&gt;
 &lt;li&gt;Full Config: config.sample.hjson (advanced arguements to run
-Tezpay)&lt;/li&gt;
+Mavpay)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -134,7 +134,7 @@ payout wallet, or know how, skip this section.&lt;/p&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Next&lt;/strong&gt;, select &amp;rsquo;new account&amp;rsquo;, and input a new (ie Tezpay1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next&lt;/strong&gt;, select &amp;rsquo;new account&amp;rsquo;, and input a new (ie Mavpay1)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -194,7 +194,7 @@ payout wallet, or know how, skip this section.&lt;/p&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;The next section will review the setup needed for Tezpay. We will
+&lt;p&gt;The next section will review the setup needed for Mavpay. We will
 review the Configuration File and Payout Wallet files. In this section
 we will review:&lt;/p&gt;
 &lt;ol&gt;
@@ -341,7 +341,7 @@ These three files will be used to run the application and payouts.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezpay: How to Pay Delegators</title>
+      <title>Mavpay: How to Pay Delegators</title>
       <link>/mavpay/tutorials/how-to-pay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -350,7 +350,7 @@ These three files will be used to run the application and payouts.&lt;/p&gt;
         
         
         &lt;h2 id=&#34;using-mavpay&#34;&gt;Using MavPay&lt;/h2&gt;
-&lt;h3 id=&#34;summary-of-using-mavpay&#34;&gt;Summary of Using Tezpay&lt;/h3&gt;
+&lt;h3 id=&#34;summary-of-using-mavpay&#34;&gt;Summary of Using Mavpay&lt;/h3&gt;
 &lt;p&gt;Using the MavPay application is through CLI for now and will be
 carried out through a few commands.&lt;/p&gt;
 &lt;p&gt;This section will review:&lt;/p&gt;
@@ -484,7 +484,7 @@ decentralizing the Mavryk Blockchain.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tezpay: How to Setup Notifications</title>
+      <title>Mavpay: How to Setup Notifications</title>
       <link>/mavpay/tutorials/how-to-notify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -658,7 +658,7 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
     </item>
     
     <item>
-      <title>Tezpay: How to Setup with Peak GUI</title>
+      <title>Mavpay: How to Setup with Peak GUI</title>
       <link>/mavpay/tutorials/how-to-setup-gui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -760,7 +760,7 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
     </item>
     
     <item>
-      <title>Tezpay: How to Update</title>
+      <title>Mavpay: How to Update</title>
       <link>/mavpay/tutorials/how-to-update/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
