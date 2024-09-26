@@ -6,13 +6,13 @@
   </url><url>
     <loc>/mavpay/tutorials/how-to-setup/</loc>
   </url><url>
-    <loc>/mavwatch/tutorials/how-to-setup/</loc>
+    <loc>/tezwatch/tutorials/how-to-setup/</loc>
   </url><url>
-    <loc>/mavgov/tutorials/how-to-vote/</loc>
+    <loc>/tezgov/tutorials/how-to-vote/</loc>
   </url><url>
     <loc>/getting-started/</loc>
   </url><url>
-    <loc>/mavbake/tutorials/how-to-bake-ghostnet/</loc>
+    <loc>/mavbake/tutorials/how-to-bake-basenet/</loc>
   </url><url>
     <loc>/mavbake/tutorials/how-to-bake-docker/</loc>
   </url><url>
@@ -20,15 +20,15 @@
   </url><url>
     <loc>/mavbake/tutorials/how-to-bootstrap/</loc>
   </url><url>
-    <loc>/mavgov/tutorials/how-to-inject-proposals/</loc>
+    <loc>/tezgov/tutorials/how-to-inject-proposals/</loc>
   </url><url>
     <loc>/mavbake/tutorials/how-to-monitor/</loc>
   </url><url>
-    <loc>/mavwatch/tutorials/how-to-monitor-balances-and-transactions/</loc>
+    <loc>/tezwatch/tutorials/how-to-monitor-balances-and-transactions/</loc>
   </url><url>
     <loc>/mavpay/tutorials/how-to-pay/</loc>
   </url><url>
-    <loc>/mavgov/tutorials/how-to-set-deposits-limit/</loc>
+    <loc>/tezgov/tutorials/how-to-set-deposits-limit/</loc>
   </url><url>
     <loc>/mavpay/tutorials/how-to-notify/</loc>
   </url><url>
@@ -40,27 +40,27 @@
   </url><url>
     <loc>/mavpay/tutorials/how-to-update/</loc>
   </url><url>
-    <loc>/</loc>
-  </url><url>
     <loc>/mavbake/</loc>
-  </url><url>
-    <loc>/mavgov/</loc>
-  </url><url>
-    <loc>/getting-started/best-practices/</loc>
-  </url><url>
-    <loc>/getting-started/public-baking/</loc>
   </url><url>
     <loc>/mavpay/</loc>
   </url><url>
-    <loc>/mavwatch/</loc>
+    <loc>/getting-started/best-practices/</loc>
+  </url><url>
+    <loc>/</loc>
+  </url><url>
+    <loc>/getting-started/public-baking/</loc>
+  </url><url>
+    <loc>/tezgov/</loc>
+  </url><url>
+    <loc>/tezwatch/</loc>
   </url><url>
     <loc>/mavbake/tutorials/</loc>
   </url><url>
-    <loc>/mavgov/tutorials/</loc>
-  </url><url>
     <loc>/mavpay/tutorials/</loc>
   </url><url>
-    <loc>/mavwatch/tutorials/</loc>
+    <loc>/tezgov/tutorials/</loc>
+  </url><url>
+    <loc>/tezwatch/tutorials/</loc>
   </url><url>
     <loc>/getting-started/what-is-baking/</loc>
   </url><url>
@@ -71,14 +71,6 @@
     <loc>/mavpay/configuration/examples/default/</loc>
   </url><url>
     <loc>/mavpay/extensions/reference/hooks/</loc>
-  </url><url>
-    <loc>/mavbake/reference/</loc>
-  </url><url>
-    <loc>/mavpay/reference/</loc>
-  </url><url>
-    <loc>/mavpay/configuration/examples/sample/</loc>
-  </url><url>
-    <loc>/mavpay/configuration/examples/starter/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake/</loc>
   </url><url>
@@ -147,6 +139,14 @@
     <loc>/mavpay/reference/cmd/mavpay_transfer/</loc>
   </url><url>
     <loc>/mavpay/reference/cmd/mavpay_version/</loc>
+  </url><url>
+    <loc>/mavbake/reference/</loc>
+  </url><url>
+    <loc>/mavpay/reference/</loc>
+  </url><url>
+    <loc>/mavpay/configuration/examples/sample/</loc>
+  </url><url>
+    <loc>/mavpay/configuration/examples/starter/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>

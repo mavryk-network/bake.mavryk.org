@@ -51,12 +51,12 @@
 &lt;p&gt;At this stage, it&amp;rsquo;s necessary to bootstrap your node, meaning to download a copy of the blockchain so you don&amp;rsquo;t have to synchronize block-by-block, which takes hours at best.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake bootstrap-node &amp;lt;url&amp;gt; &amp;lt;block_hash&amp;gt;
 # example:
-mavbake bootstrap-node https://snapshots.eu.tzinit.org/mainnet/rolling BL8Vq12HX6MJWkB6RLgQAYRKpKZ5fyMoLpWzAoQ6mh55gkKHiQU
+mavbake bootstrap-node https://snapshots.mavryk.network/rolling BLVo8bPM1MU2h6dnKkxHkRmXcEigQbtLd9XwNrCHbKEwERSgZDy
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;You can replace &lt;code&gt;eu&lt;/code&gt; above with &lt;code&gt;us&lt;/code&gt; or &lt;code&gt;asia&lt;/code&gt; if you prefer to use a different mirror closer to you.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Get the block hash and block level from the snapshot provider&amp;rsquo;s website:
-&lt;a href=&#34;https://snapshots.eu.tzinit.org/mainnet/rolling.html&#34;&gt;https://snapshots.eu.tzinit.org/mainnet/rolling.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://snapshots.mavryk.network/rolling.html&#34;&gt;https://snapshots.mavryk.network/rolling.html&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;block_hash&amp;gt;&lt;/code&gt; argument is optional but encouraged. If you don&amp;rsquo;t want to borther with this protection, use the second method below which will also be faster.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -73,7 +73,7 @@ mavbake bootstrap-node https://snapshots.eu.tzinit.org/mainnet/rolling BL8Vq12HX
 &lt;p&gt;Level refers to the latest block number on mainnet. Navigate to &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; and observe the latest block. Once the level in your command matches the latest block on your blockchain explorer, your node is in full sync and you can keep following the steps below.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Both &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; provide Ghostnet and Testnet block explorers as well. Make sure you&amp;rsquo;re looking at the right explorer.&lt;/p&gt;
+&lt;p&gt;Both &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; provide Basenet and Testnet block explorers as well. Make sure you&amp;rsquo;re looking at the right explorer.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;import-ledger-key-or-soft-key-and-register-as-baker&#34;&gt;Import Ledger key or soft key and register as baker&lt;/h3&gt;
 &lt;p&gt;Now that your node is in full sync, you can proceed with the most important part: (1) your baker parameters import into your baker node and (2) submit your baker registration on the blockchain.&lt;/p&gt;
@@ -114,14 +114,14 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;First, generate the baker key for MavBake signer:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake signer - gen keys baker
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure to backup your key in a secure location. You can get the key by running the following command:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/secret_keys
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/secret_keys
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, import the baker public key hash to MavBake node:&lt;/p&gt;
 &lt;p&gt;Get the mv1-mv3 address which is the hashed public key of the baker key:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/public_key_hashs
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/public_key_hashs
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Import the hashed key to the MavBake node:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;Change the mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX to the hashed key you got from the previous command.&lt;/p&gt;
+&lt;p&gt;Change the mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr to the hashed key you got from the previous command.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;register-ledger-key-as-baker-on-the-blockchain&#34;&gt;Register Ledger key as baker on the blockchain&lt;/h4&gt;
 &lt;p&gt;For this step your node level must be synced with the latest block on the blockchain explorer. You must also temporarily open your Ledger Mavryk Wallet app to register your key as a baker (&lt;strong&gt;note&lt;/strong&gt;: as well as when voting). For all other baker operations, you must use the Mavryk Baking app.&lt;/p&gt;
@@ -134,25 +134,25 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Mavbake: How to Bake on Ghostnet</title>
-      <link>/mavbake/tutorials/how-to-bake-ghostnet/</link>
+      <title>Mavbake: How to Bake on Basenet</title>
+      <link>/mavbake/tutorials/how-to-bake-basenet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mavbake/tutorials/how-to-bake-ghostnet/</guid>
+      <guid>/mavbake/tutorials/how-to-bake-basenet/</guid>
       <description>
         
         
-        &lt;h2 id=&#34;ghostnet&#34;&gt;Ghostnet&lt;/h2&gt;
-&lt;p&gt;Ghostnet is Mavryk&amp;rsquo; perpetual testnet. In the context of MavBake, Ghostnet is
+        &lt;h2 id=&#34;basenet&#34;&gt;Basenet&lt;/h2&gt;
+&lt;p&gt;Basenet is Mavryk&amp;rsquo; perpetual testnet. In the context of MavBake, Basenet is
 intended to provide a no-consequences testing environment where you can
 learn how to properly bake and pay using MavBake and MavPay. It&amp;rsquo;s highly
-recommended for all serious bakers to have a Ghostnet setup running, to
+recommended for all serious bakers to have a Basenet setup running, to
 help test protocol migrations.&lt;/p&gt;
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 &lt;p&gt;Installing MavBake CLI and using it to setup your Mavryk baker is very simple. You will need the following tools:&lt;/p&gt;
@@ -169,18 +169,18 @@ help test protocol migrations.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget -q https://github.com/mavryk-network/mavbake/raw/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sudo sh /tmp/install.sh
 # you may be prompted for sudo password
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-mavryk-node-signer-and-install-mavbake-dependencies&#34;&gt;Setup Mavryk node, signer and install mavbake dependencies&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup -a --node-configuration=https://raw.githubusercontent.com/mavryk-network/mvrk.configs/main/basenet.json
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup -a --node-configuration=https://raw.githubusercontent.com/tez-capital/mvrk.configs/main/basenet.json
 # you may be prompted for sudo password
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;bootstrap-mavryk-node&#34;&gt;Bootstrap Mavryk node&lt;/h3&gt;
 &lt;p&gt;At this stage, it&amp;rsquo;s necessary to bootstrap your node, meaning to download a copy of the blockchain so you don&amp;rsquo;t have to synchronize block-by-block, which takes hours at best.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake bootstrap-node &amp;lt;url&amp;gt; &amp;lt;block_hash&amp;gt;
 # example:
-mavbake bootstrap-node https://snapshots.eu.tzinit.org/ghostnet/rolling BL8Vq12HX6MJWkB6RLgQAYRKpKZ5fyMoLpWzAoQ6mh55gkKHiQU
+mavbake bootstrap-node https://snapshots.mavryk.network/rolling BLVo8bPM1MU2h6dnKkxHkRmXcEigQbtLd9XwNrCHbKEwERSgZDy
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;You can replace &lt;code&gt;eu&lt;/code&gt; above with &lt;code&gt;us&lt;/code&gt; or &lt;code&gt;asia&lt;/code&gt; if you prefer to use a different mirror closer to you.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Get the block hash and block level from the snapshot provider&amp;rsquo;s website:
-&lt;a href=&#34;https://snapshots.eu.tzinit.org/ghostnet/rolling.html&#34;&gt;https://snapshots.eu.tzinit.org/ghostnet/rolling.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://snapshots.mavryk.network/rolling&#34;&gt;https://snapshots.mavryk.network/rolling&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;block_hash&amp;gt;&lt;/code&gt; argument is optional but encouraged. If you don&amp;rsquo;t want to borther with this protection, use the second method below which will also be faster.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -197,7 +197,7 @@ mavbake bootstrap-node https://snapshots.eu.tzinit.org/ghostnet/rolling BL8Vq12H
 &lt;p&gt;Level refers to the latest block number on mainnet. Navigate to &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; and observe the latest block. Once the level in your command matches the latest block on your blockchain explorer, your node is in full sync and you can keep following the steps below.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Both &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; provide Ghostnet and Testnet block explorers as well. Make sure you&amp;rsquo;re looking at the right explorer.&lt;/p&gt;
+&lt;p&gt;Both &lt;a href=&#34;https://tzkt.io&#34;&gt;https://tzkt.io&lt;/a&gt; or &lt;a href=&#34;https://tzstats.com&#34;&gt;https://tzstats.com&lt;/a&gt; provide Basenet and Testnet block explorers as well. Make sure you&amp;rsquo;re looking at the right explorer.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;import-ledger-key-or-soft-key-and-register-as-baker&#34;&gt;Import Ledger key or soft key and register as baker&lt;/h3&gt;
 &lt;p&gt;Now that your node is in full sync, you can proceed with the most important part: (1) your baker parameters import into your baker node and (2) submit your baker registration on the blockchain.&lt;/p&gt;
@@ -238,14 +238,14 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;First, generate the baker key for MavBake signer:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake signer - gen keys baker
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure to backup your key in a secure location. You can get the key by running the following command:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/secret_keys
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/secret_keys
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, import the baker public key hash to MavBake node:&lt;/p&gt;
 &lt;p&gt;Get the mv1-mv3 address which is the hashed public key of the baker key:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/public_key_hashs
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/public_key_hashs
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Import the hashed key to the MavBake node:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;Change the mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX to the hashed key you got from the previous command.&lt;/p&gt;
+&lt;p&gt;Change the mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr to the hashed key you got from the previous command.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;register-ledger-key-as-baker-on-the-blockchain&#34;&gt;Register Ledger key as baker on the blockchain&lt;/h4&gt;
 &lt;p&gt;For this step your node level must be synced with the latest block on the blockchain explorer. You must also temporarily open your Ledger Mavryk Wallet app to register your key as a baker (&lt;strong&gt;note&lt;/strong&gt;: as well as when voting). For all other baker operations, you must use the Mavryk Baking app.&lt;/p&gt;
@@ -258,7 +258,7 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -327,17 +327,17 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;First, generate the baker key for MavBake signer:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake signer - gen keys baker
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure to backup your key in a secure location. You can get the key by running the following command:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/secret_keys
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/secret_keys
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, import the baker public key hash to MavBake node:&lt;/p&gt;
 &lt;p&gt;Get the mv1-mv3 address which is the hashed public key of the baker key:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /bake-buddy/signer/data/.mavryk-signer/public_key_hashs
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mavpay/signer/data/.mavryk-signer/public_key_hashs
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Import the hashed key to the MavBake node:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake node client import secret key baker http://127.0.0.1:20090/mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;Change the mv1VEkF8BZm8c66v5fxrFTEDQsMiHXYSe6iX to the hashed key you got from the previous command.&lt;/p&gt;
+&lt;p&gt;Change the mv1WyiGYVL8D6CE81AYnQseALR6zh8v3J3Dr to the hashed key you got from the previous command.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Finally, change the permissions of the newly generated keys to be readable by the ascend user and group which runs the MavBake node:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chown -R ascend:ascend /bake-buddy/
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chown -R ascend:ascend /mavpay/
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;register-ledger-key-as-baker-on-the-mavryk-blockchain&#34;&gt;Register Ledger key as baker on the Mavryk blockchain&lt;/h4&gt;
 &lt;p&gt;For this step your node level must be synced with the latest block on the blockchain explorer. You must also temporarily open your Ledger Mavryk Wallet app to register your key as a baker (&lt;strong&gt;note&lt;/strong&gt;: as well as when voting). For all other baker operations, you must use the Mavryk Baking app.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake register-key
@@ -349,7 +349,7 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -367,7 +367,7 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;For this tutorial, you&amp;rsquo;ll need to have already followed one of the following tutorials:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;/mavbake/tutorials/how-to-bake&#34;&gt;How to Bake&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/mavbake/tutorials/how-to-bake-ghostnet&#34;&gt;How to Bake on Ghostnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mavbake/tutorials/how-to-bake-basenet&#34;&gt;How to Bake on Basenet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The TezPeak GUI is a graphical user interface for MavBake, which is a command-line tool for baking and endorsing Mavryk blocks. It&amp;rsquo;s a great way to get started with baking and endorsing without having to use the command line on a day-to-day basis.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -375,11 +375,11 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;TezPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/mavryk-network/tezpeak&#34;&gt;https://github.com/mavryk-network/tezpeak&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TezPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/tez-capital/tezpeak&#34;&gt;https://github.com/tez-capital/tezpeak&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;download-and-install-tezpeak-via-mavbake&#34;&gt;Download and install TezPeak via MavBake&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup --peak
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-tezpeak-configuration&#34;&gt;Setup TezPeak configuration&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /bake-buddy/peak/ &amp;amp;&amp;amp; touch config.hjson
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /mavpay/peak/ &amp;amp;&amp;amp; touch config.hjson
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open the &lt;code&gt;config.hjson&lt;/code&gt; file with your favorite text editor.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you&amp;rsquo;ve used json before but now hjson, you can read more about it here: &lt;a href=&#34;https://hjson.github.io/&#34;&gt;https://hjson.github.io/&lt;/a&gt;&lt;/p&gt;
@@ -388,11 +388,11 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;Here&amp;rsquo;s an example of a &lt;code&gt;config.hjson&lt;/code&gt; file with minimal MavBake configuration for one baker:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  listen: 0.0.0.0:8733
- app_root: /bake-buddy
+ app_root: /mavpay
  modules: {
      mavbake: {
          bakers: [
-             mv1Jx2M1gXNUkw1NMdf3iuCzVuqfcwLDkpAs
+             mv1VUJov75TUSewo2FcLbNLmzhVKMgenCv5o
          ]
      }
  }
@@ -400,11 +400,11 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also make TezPeak GUI only available on the local computer if you have an all-in-one setup (i.e. the baker and the GUI are on the same computer which has a graphical user interface):&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  listen: 127.0.0.1:8733
- app_root: /bake-buddy
+ app_root: /mavpay
  modules: {
      mavbake: {
          bakers: [
-             mv1Jx2M1gXNUkw1NMdf3iuCzVuqfcwLDkpAs
+             mv1VUJov75TUSewo2FcLbNLmzhVKMgenCv5o
          ]
      }
  }
@@ -416,14 +416,14 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
  id: &amp;#34;&amp;#34;
  # Address to listen on
  listen: 127.0.0.1:8733
- app_root: /bake-buddy
+ app_root: /mavpay
  modules: {
      mavbake: {
  		# uncomment bellow to disable mavbake package monitoring
          # applications: null
          bakers: [
  			# list of bakers to monitor for balances and rights
-             mv1JTLiSM59Akw4fx5T6yafPpYx9GkGQeA7N
+             tz1P6WKJu2rcbxKiKRZHKQKmKrpC9TfW1AwM
          ]
      }
  # List of reference nodes to connect to
@@ -449,7 +449,7 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;&lt;img src=&#34;/mavbake/tutorial/tezpeakexample.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -468,9 +468,9 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;p&gt;&lt;strong&gt;Please be aware that bootstrapping your node could result in your nonce revelation to fail and for you to forfit your endorsement rights for the cycle.&lt;/strong&gt; This is because by default we&amp;rsquo;re using rolling snapshots which don&amp;rsquo;t export full blocks for past cycles by default. If your node baked a special kind of block during the last cycle, it may be asked to provide its nonce to the network. To do so, it needs to have the &lt;code&gt;.mavryk-client&lt;/code&gt; data intact from the last cycle and it needs to have the full blocks for the last cycle.&lt;/p&gt;
 &lt;p&gt;To remedy this situation and to never risk forfitting your endorsement rights for a whole cycle, you have to use a snapshot that&amp;rsquo;s at least 5-6 days old (from today), when bootstrapping a node. You also have to not wipe out or to move your &lt;code&gt;.mavryk-client&lt;/code&gt; directory. This way you&amp;rsquo;ll always have at least 1 cycle+ of full blocks in your node&amp;rsquo;s database as well as the nonce file on disk. The downside of this method is that it will slow down your bootstrap process by the amount of time it takes to download the full blocks for the past 1 cycle+, which can be up to 2 hours on some slow home networks.&lt;/p&gt;
 &lt;h3 id=&#34;bootstrap-using-a-snapshot&#34;&gt;Bootstrap using a snapshot&lt;/h3&gt;
-&lt;p&gt;You can get Mavryk node snapshots in the following place run by the Mavryk Dynamics&lt;/p&gt;
+&lt;p&gt;You can get Mavryk node snapshots in the following place run by Mavryk Dynamics&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://snapshots.tzinit.org/&#34;&gt;https://snapshots.tzinit.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://snapshots.mavryk.org/&#34;&gt;https://snapshots.mavryk.org/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Before bootstrapping your node, made sure to stop your node as shown below.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Using the first bootstrap method below ensures that the snapshot is checked for consistency both programmatically and by your checking the blockchain explorer(s) to confirm the block hash. This is the most reliable and robust method but it it also the slowest.&lt;/p&gt;
@@ -478,12 +478,12 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 mavbake bootstrap-node &amp;lt;url&amp;gt; &amp;lt;block_hash&amp;gt;
 mavbake start
 # example:
-mavbake bootstrap-node https://snapshots.eu.tzinit.org/mainnet/rolling BL8Vq12HX6MJWkB6RLgQAYRKpKZ5fyMoLpWzAoQ6mh55gkKHiQU
+mavbake bootstrap-node https://snapshots.mavryk.network/rolling BLVo8bPM1MU2h6dnKkxHkRmXcEigQbtLd9XwNrCHbKEwERSgZDy
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;You can replace &lt;code&gt;eu&lt;/code&gt; above with &lt;code&gt;us&lt;/code&gt; or &lt;code&gt;asia&lt;/code&gt; if you prefer to use a different mirror closer to you.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Get the block hash and block level from the snapshot provider&amp;rsquo;s website:
-&lt;a href=&#34;https://snapshots.eu.tzinit.org/mainnet/rolling.html&#34;&gt;https://snapshots.eu.tzinit.org/mainnet/rolling.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://snapshots.mavryk.network/rolling.html&#34;&gt;https://snapshots.mavryk.network/rolling.html&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;block_hash&amp;gt;&lt;/code&gt; argument is optional but encouraged. If you don&amp;rsquo;t want to borther with this protection, use the second method below which will also be faster.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -496,13 +496,13 @@ mavbake bootstrap-node https://snapshots.eu.tzinit.org/mainnet/rolling BL8Vq12HX
 mavbake bootstrap-node --no-check &amp;lt;url&amp;gt;
 mavbake start
 # example:
-mavbake bootstrap-node --no-check https://snapshots.eu.tzinit.org/mainnet/rolling
+mavbake bootstrap-node --no-check https://snapshots.mavryk.network/rolling
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;You can replace &lt;code&gt;eu&lt;/code&gt; above with &lt;code&gt;us&lt;/code&gt; or &lt;code&gt;asia&lt;/code&gt; if you prefer to use a different mirror closer to you.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -520,7 +520,7 @@ mavbake bootstrap-node --no-check https://snapshots.eu.tzinit.org/mainnet/rollin
 &lt;p&gt;MavBake gives you the option to monitor all Mavryk node and baking services. MavBake utilizes the journalctl utility included in most Linux distribution to store and manage its logging.  You can extract all logs for a node easily to diagnose any issues. This tutorial will walk you through the process of monitoring your MavBake node.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;monitor-overall-mavbake-status&#34;&gt;Monitor overall MavBake status&lt;/h2&gt;
-&lt;p&gt;Run this command to get the status of your baker in a snapshot. After first setting up and starting the baker, you may need to give it a minute or 2 before the status display stops changing and missing some information. If you notice there is an error status on any of the fields after around 3-5 minutes of starting the services, seek out help in the Mavryk Dynamics community as there is something that probably needs tweaking.&lt;/p&gt;
+&lt;p&gt;Run this command to get the status of your baker in a snapshot. After first setting up and starting the baker, you may need to give it a minute or 2 before the status display stops changing and missing some information. If you notice there is an error status on any of the fields after around 3-5 minutes of starting the services, seek out help in the Mavryk community as there is something that probably needs tweaking.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake info
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/mavbake/tutorial/mavbakeInfo.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;monitor-mavbake-logs&#34;&gt;Monitor MavBake logs&lt;/h2&gt;
@@ -556,7 +556,7 @@ mavbake node log accuser-next -f
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;tail -f /var/log/syslog | grep mavbake
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -575,7 +575,7 @@ mavbake node log accuser-next -f
 &lt;h3 id=&#34;installation-errors&#34;&gt;Installation errors&lt;/h3&gt;
 &lt;p&gt;If you encounter an installation issue, run the setup command again with the &lt;code&gt;--log-level=trace&lt;/code&gt; option, for example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup -a --log-level=trace
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can add &lt;code&gt;--log-level=trace&lt;/code&gt; regardless of the setup type that&amp;rsquo;s being attempted, whether it&amp;rsquo;s on Ghostnet or some other testnet.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can add &lt;code&gt;--log-level=trace&lt;/code&gt; regardless of the setup type that&amp;rsquo;s being attempted, whether it&amp;rsquo;s on Basenet or some other testnet.&lt;/p&gt;
 &lt;h3 id=&#34;blockchain-errors&#34;&gt;Blockchain errors&lt;/h3&gt;
 &lt;p&gt;Sometimes, you will notice that &lt;code&gt;mavbake info&lt;/code&gt; never seems to show that you are able to fully synchronize your node. Upon looking at it you may find that your node is stuck on a certain block. This is usually due to a problem with the Mavryk node itself. The Mavryk node is a separate process from the MavBake process. If you are having issues with the Mavryk node, you can try to restart it with the following command:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake restart
@@ -599,7 +599,7 @@ mai 20 08:51:43 baker-VirtualBox node[5868]: May 20 08:51:43.267 - node.store:
 mai 20 08:51:43 baker-VirtualBox node[5868]: May 20 08:51:43.267 - node.store: attempting to restore the store&amp;#39;s consistency...
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -621,7 +621,7 @@ mai 20 08:51:43 baker-VirtualBox node[5868]: May 20 08:51:43.267 - node.store: a
 &lt;li&gt;mavbake - Command line interface for setting and monitoring your baker, using the help of the two tools above&lt;/li&gt;
 &lt;li&gt;Mavkit binaries - Mavryk node binaries published by the Mavryk core developers - &lt;a href=&#34;https://gitlab.com/mavryk-network/mavryk-protocol/-/releases&#34;&gt;https://gitlab.com/mavryk-network/mavryk-protocol/-/releases&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;We regularly update all parts of the MavBake stack and the Mavryk core developers regularly publish new Mavkit versions and protocols.  All mandatory updates and optional updates are posted across Tez.Capital social media channels.  Updates must be performed manually at this time, to ensure the Mavryk node operator is the only person able to control their baking operation.&lt;/p&gt;
+&lt;p&gt;We regularly update all parts of the MavBake stack and the Mavryk core developers regularly publish new Mavkit versions and protocols.  All mandatory updates and optional updates are posted across mav.Capital social media channels.  Updates must be performed manually at this time, to ensure the Mavryk node operator is the only person able to control their baking operation.&lt;/p&gt;
 &lt;h3 id=&#34;which-mavbake-upgrade-method-should-i-use&#34;&gt;Which MavBake upgrade method should I use?&lt;/h3&gt;
 &lt;p&gt;We will sometimes specify which upgrade method to use by referencing its letter.  If a letter recommendation is not specified, use the guidelines below to determine which method to use:&lt;/p&gt;
 &lt;ul&gt;
@@ -656,7 +656,7 @@ mai 20 08:51:43 baker-VirtualBox node[5868]: May 20 08:51:43.267 - node.store: a
 &lt;p&gt;&lt;img src=&#34;/mavbake/tutorial/mavbakeVersionAll.png&#34; alt=&#34;&amp;lt;mavbake version, Mavkit versions&amp;gt;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
-&lt;a href=&#34;https://discord.gg/cVGMA4MaNM&#34;&gt;Discord&lt;/a&gt; or &lt;a href=&#34;https://t.me/tezcapital&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

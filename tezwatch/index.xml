@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bake.mavryk.org – TezWatch</title>
-    <link>/mavwatch/</link>
+    <link>/tezwatch/</link>
     <description>Recent content in TezWatch on bake.mavryk.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mavryk Dynamics</copyright>
     
-	  <atom:link href="/mavwatch/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tezwatch/index.xml" rel="self" type="application/rss+xml" />
     
     
       
