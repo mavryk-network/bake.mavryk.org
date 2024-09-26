@@ -222,7 +222,7 @@ we will review:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Paste your &lt;strong&gt;Baker&lt;/strong&gt; wallet in between the quotes&lt;/li&gt;
 &lt;li&gt;Set your Baker fee (ie 0.05 = 5% fee)&lt;/li&gt;
-&lt;li&gt;Input minimum payout for delegators (ie. 1 = 1 XTZ)&lt;/li&gt;
+&lt;li&gt;Input minimum payout for delegators (ie. 1 = 1 MVRK)&lt;/li&gt;
 &lt;li&gt;This section allows you to split payments for baking (Bonds) and
 fees from delegators (Fees) if you want - input &lt;strong&gt;Baker&lt;/strong&gt; wallet
 address and percentage to split. This example does not split, where
@@ -259,7 +259,7 @@ custom file as well - but should be done by experienced users.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Paste your &lt;strong&gt;Baker&lt;/strong&gt; wallet in between the quotes&lt;/li&gt;
 &lt;li&gt;Set your Baker fee (ie 5% = 0.05)&lt;/li&gt;
-&lt;li&gt;Input minimum payout for delegators (ie. 1 = 1 XTZ)&lt;/li&gt;
+&lt;li&gt;Input minimum payout for delegators (ie. 1 = 1 MVRK)&lt;/li&gt;
 &lt;li&gt;Input minimum staking balance for delegators&lt;/li&gt;
 &lt;li&gt;Input delegators wallets that you wish to ignore completely (not
 often used)&lt;/li&gt;
@@ -284,7 +284,7 @@ structure of more than 1 wallet. 100%=1.00&lt;/li&gt;
 &lt;li&gt;This section allows you to split payments for fees collected (Fees),
 input wallet address and percentage to allocate (see example above
 for structure of more than 1 wallet. 100%=1.00&lt;/li&gt;
-&lt;li&gt;Donations refer to donating a specific amount of XTZ to wallets
+&lt;li&gt;Donations refer to donating a specific amount of MVRK to wallets
 every payout
 &lt;ol&gt;
 &lt;li&gt;Input a donation amount in &lt;em&gt;donate&lt;/em&gt; field as a percentage (ie
@@ -301,7 +301,7 @@ your delegation limit &lt;strong&gt;Do not edit unless you are an experience
 user&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;This section allows for automatic notifications/messages to be sent
 to specific platforms in order to broadcast messages (ie &lt;em&gt;&amp;lsquo;Bakery
-has paid 100XTZ in rewards for latest cycle&amp;rsquo;&lt;/em&gt; &lt;strong&gt;We will cover this
+has paid 100MVRK in rewards for latest cycle&amp;rsquo;&lt;/em&gt; &lt;strong&gt;We will cover this
 in a separate section&lt;/strong&gt;
 &lt;em&gt;see appendix X&lt;/em&gt; and platforms supported are &lt;em&gt;&lt;strong&gt;Twitter, Discord, and E-mail&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -634,7 +634,7 @@ b. Access Token and Secret&lt;/li&gt;
 &lt;code&gt;access_token_secret: Your_Access_Token_Secret&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;consumer_key: Your_Consumer_Key&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;consumer_secret: Your_Consumer_Key_Secret&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;message_template: Rewards for &amp;lt;Cycle&amp;gt; have been paid to &amp;lt;Delegators&amp;gt; delegates in amount of &amp;lt;DistributedRewards&amp;gt; using #MavPay.👀 XTZ baked with #MavBake! We donate to wallet mv1F6Fm2Lnaehj3W9QcCohaQBE4wnEmRSnFJ to fund future development in Mavryk. #cerberusbakery #mavryk.&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;message_template: Rewards for &amp;lt;Cycle&amp;gt; have been paid to &amp;lt;Delegators&amp;gt; delegates in amount of &amp;lt;DistributedRewards&amp;gt; using #MavPay.👀 MVRK baked with #MavBake! We donate to wallet mv1V4h45W3p4e1sjSBvRkK2uYbvkTnSuHg8g to fund future development in Mavryk. #cerberusbakery #mavryk.&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;type: twitter&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;}&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;]&lt;/code&gt;&lt;/li&gt;
