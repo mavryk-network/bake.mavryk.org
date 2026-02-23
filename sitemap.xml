@@ -78,19 +78,23 @@
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_bootstrap-node/</loc>
   </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_erase-ami-cache/</loc>
-  </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_get-rights/</loc>
-  </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_import-key/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_dal/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_info/</loc>
   </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_instance/</loc>
+  </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_instance_list/</loc>
+  </url><url>
     <loc>/mavbake/reference/cmd/mavbake_list-ledgers/</loc>
   </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_modules/</loc>
+    <loc>/mavbake/reference/cmd/mavbake_mavkit-signer/</loc>
+  </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_mavsign/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_node/</loc>
+  </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_pay/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_peak/</loc>
   </url><url>
@@ -104,11 +108,17 @@
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_setup-ledger/</loc>
   </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_setup-mavsign/</loc>
+  </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_setup-soft-wallet/</loc>
+  </url><url>
     <loc>/mavbake/reference/cmd/mavbake_signer/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_start/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_stop/</loc>
+  </url><url>
+    <loc>/mavbake/reference/cmd/mavbake_update-dal-profiles/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_upgrade/</loc>
   </url><url>
