@@ -6,8 +6,6 @@
   </url><url>
     <loc>/mavpay/tutorials/how-to-setup/</loc>
   </url><url>
-    <loc>/tezwatch/tutorials/how-to-setup/</loc>
-  </url><url>
     <loc>/tezgov/tutorials/how-to-vote/</loc>
   </url><url>
     <loc>/getting-started/</loc>
@@ -23,8 +21,6 @@
     <loc>/tezgov/tutorials/how-to-inject-proposals/</loc>
   </url><url>
     <loc>/mavbake/tutorials/how-to-monitor/</loc>
-  </url><url>
-    <loc>/tezwatch/tutorials/how-to-monitor-balances-and-transactions/</loc>
   </url><url>
     <loc>/mavpay/tutorials/how-to-pay/</loc>
   </url><url>
@@ -52,15 +48,11 @@
   </url><url>
     <loc>/tezgov/</loc>
   </url><url>
-    <loc>/tezwatch/</loc>
-  </url><url>
     <loc>/mavbake/tutorials/</loc>
   </url><url>
     <loc>/mavpay/tutorials/</loc>
   </url><url>
     <loc>/tezgov/tutorials/</loc>
-  </url><url>
-    <loc>/tezwatch/tutorials/</loc>
   </url><url>
     <loc>/getting-started/what-is-baking/</loc>
   </url><url>
