@@ -45,7 +45,7 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget -q https://github.com/mavryk-network/mavbake/raw/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sudo sh /tmp/install.sh
 # you may be prompted for sudo password
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-mavryk-node-signer-and-install-mavbake-dependencies&#34;&gt;Setup Mavryk node, signer and install mavbake dependencies&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup -a
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup
 # you may be prompted for sudo password
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;bootstrap-mavryk-node&#34;&gt;Bootstrap Mavryk node&lt;/h3&gt;
 &lt;p&gt;At this stage, it&amp;rsquo;s necessary to bootstrap your node, meaning to download a copy of the blockchain so you don&amp;rsquo;t have to synchronize block-by-block, which takes hours at best.&lt;/p&gt;
@@ -369,22 +369,22 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
 &lt;li&gt;&lt;a href=&#34;/mavbake/tutorials/how-to-bake&#34;&gt;How to Bake&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/mavbake/tutorials/how-to-bake-basenet&#34;&gt;How to Bake on Basenet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The TezPeak GUI is a graphical user interface for MavBake, which is a command-line tool for baking and endorsing Mavryk blocks. It&amp;rsquo;s a great way to get started with baking and endorsing without having to use the command line on a day-to-day basis.&lt;/p&gt;
+&lt;p&gt;The MavPeak GUI is a graphical user interface for MavBake, which is a command-line tool for baking and endorsing Mavryk blocks. It&amp;rsquo;s a great way to get started with baking and endorsing without having to use the command line on a day-to-day basis.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Please note that mavbake version 0.13.0-beta minimum is required to use TezPeak.&lt;/p&gt;
+&lt;p&gt;Please note that mavbake version 0.13.0-beta minimum is required to use MavPeak.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;TezPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/tez-capital/tezpeak&#34;&gt;https://github.com/tez-capital/tezpeak&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;download-and-install-tezpeak-via-mavbake&#34;&gt;Download and install TezPeak via MavBake&lt;/h3&gt;
+&lt;p&gt;MavPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/mavryk-network/mavpeak&#34;&gt;https://github.com/mavryk-network/mavpeak&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;download-and-install-mavpeak-via-mavbake&#34;&gt;Download and install MavPeak via MavBake&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup --peak
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-tezpeak-configuration&#34;&gt;Setup TezPeak configuration&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setup-mavpeak-configuration&#34;&gt;Setup MavPeak configuration&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /mavpay/peak/ &amp;amp;&amp;amp; touch config.hjson
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open the &lt;code&gt;config.hjson&lt;/code&gt; file with your favorite text editor.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you&amp;rsquo;ve used json before but now hjson, you can read more about it here: &lt;a href=&#34;https://hjson.github.io/&#34;&gt;https://hjson.github.io/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5 id=&#34;sample-tezpeak-configuration-with-1-baker&#34;&gt;Sample TezPeak configuration with 1 baker&lt;/h5&gt;
+&lt;h5 id=&#34;sample-mavpeak-configuration-with-1-baker&#34;&gt;Sample MavPeak configuration with 1 baker&lt;/h5&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a &lt;code&gt;config.hjson&lt;/code&gt; file with minimal MavBake configuration for one baker:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  listen: 0.0.0.0:8733
@@ -397,7 +397,7 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
      }
  }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also make TezPeak GUI only available on the local computer if you have an all-in-one setup (i.e. the baker and the GUI are on the same computer which has a graphical user interface):&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also make MavPeak GUI only available on the local computer if you have an all-in-one setup (i.e. the baker and the GUI are on the same computer which has a graphical user interface):&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  listen: 127.0.0.1:8733
  app_root: /mavpay
@@ -409,8 +409,8 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
      }
  }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;full-tezpeak-configuration-examples&#34;&gt;Full TezPeak configuration examples&lt;/h5&gt;
-&lt;p&gt;Here&amp;rsquo;s the TezPeak configuration with all MavBake available options:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;full-mavpeak-configuration-examples&#34;&gt;Full MavPeak configuration examples&lt;/h5&gt;
+&lt;p&gt;Here&amp;rsquo;s the MavPeak configuration with all MavBake available options:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  # Id to show in the header
  id: &amp;#34;&amp;#34;
@@ -441,11 +441,11 @@ If you used to bake on mainnet with the same ledger as you&amp;rsquo;re trying t
  # private - assumes private environment, all operations are allowed
  mode: auto
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-tezpeak-and-connect-to-it&#34;&gt;Start TezPeak and connect to it&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-mavpeak-and-connect-to-it&#34;&gt;Start MavPeak and connect to it&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake start --peak
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re connecting to the TezPeak GUI from a different computer, you&amp;rsquo;ll need to open a web browser and navigate to &lt;code&gt;http://&amp;lt;your-baker-ip&amp;gt;:8733&lt;/code&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re connecting to the MavPeak GUI from a different computer, you&amp;rsquo;ll need to open a web browser and navigate to &lt;code&gt;http://&amp;lt;your-baker-ip&amp;gt;:8733&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re connecting from the same computer, you can use &lt;code&gt;http://127.0.0.1:8733&lt;/code&gt; or &lt;code&gt;http://localhost:8733&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;tezpeak-example-screenshot&#34;&gt;TezPeak example screenshot&lt;/h2&gt;
+&lt;h2 id=&#34;mavpeak-example-screenshot&#34;&gt;MavPeak example screenshot&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/mavbake/tutorial/tezpeakexample.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
@@ -616,8 +616,8 @@ mai 20 08:51:43 baker-VirtualBox node[5868]: May 20 08:51:43.267 - node.store: a
         &lt;h2 id=&#34;mavbake-updating&#34;&gt;MavBake Updating&lt;/h2&gt;
 &lt;p&gt;The MavBake software consists of four components:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;ami - App management engine: templating and orchestration - &lt;a href=&#34;https://github.com/alis-is/ami&#34;&gt;https://github.com/alis-is/ami&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;eli - Lua Interpreter &amp;amp; Essential libraries for simple cross platform scripting - &lt;a href=&#34;https://github.com/alis-is/eli&#34;&gt;https://github.com/alis-is/eli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ami - App management engine: templating and orchestration - &lt;a href=&#34;https://github.com/mavryk-network/ami&#34;&gt;https://github.com/mavryk-network/ami&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;eli - Lua Interpreter &amp;amp; Essential libraries for simple cross platform scripting - &lt;a href=&#34;https://github.com/mavryk-network/eli&#34;&gt;https://github.com/mavryk-network/eli&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;mavbake - Command line interface for setting and monitoring your baker, using the help of the two tools above&lt;/li&gt;
 &lt;li&gt;Mavkit binaries - Mavryk node binaries published by the Mavryk core developers - &lt;a href=&#34;https://gitlab.com/mavryk-network/mavryk-protocol/-/releases&#34;&gt;https://gitlab.com/mavryk-network/mavryk-protocol/-/releases&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;

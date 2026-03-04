@@ -19,20 +19,20 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>How to Setup with Peak GUI | bake.mavryk.org</title>
-<meta name="description" content="How to Setup Using MavPay with the TezPeak GUI">
+<meta name="description" content="How to Setup Using MavPay with the MavPeak GUI">
 <meta property="og:title" content="How to Setup with Peak GUI" />
-<meta property="og:description" content="How to Setup Using MavPay with the TezPeak GUI" />
+<meta property="og:description" content="How to Setup Using MavPay with the MavPeak GUI" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/mavpay/tutorials/how-to-setup-gui/" /><meta property="article:section" content="mavpay" />
 
 
 <meta itemprop="name" content="How to Setup with Peak GUI">
-<meta itemprop="description" content="How to Setup Using MavPay with the TezPeak GUI">
+<meta itemprop="description" content="How to Setup Using MavPay with the MavPeak GUI">
 
 <meta itemprop="wordCount" content="408">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Setup with Peak GUI"/>
-<meta name="twitter:description" content="How to Setup Using MavPay with the TezPeak GUI"/>
+<meta name="twitter:description" content="How to Setup Using MavPay with the MavPeak GUI"/>
 
 
 
@@ -295,12 +295,12 @@
     <li><a href="#preparation">Preparation</a></li>
     <li><a href="#installation">Installation</a>
       <ul>
-        <li><a href="#download-and-install-tezpeak-via-mavbake">Download and install TezPeak via MavBake</a></li>
-        <li><a href="#setup-tezpeak-configuration">Setup TezPeak configuration</a></li>
+        <li><a href="#download-and-install-mavpeak-via-mavbake">Download and install MavPeak via MavBake</a></li>
+        <li><a href="#setup-mavpeak-configuration">Setup MavPeak configuration</a></li>
       </ul>
     </li>
-    <li><a href="#start-tezpeak-and-connect-to-it">Start TezPeak and connect to it</a></li>
-    <li><a href="#tezpeak-example-screenshot">TezPeak example screenshot</a></li>
+    <li><a href="#start-mavpeak-and-connect-to-it">Start MavPeak and connect to it</a></li>
+    <li><a href="#mavpeak-example-screenshot">MavPeak example screenshot</a></li>
   </ul>
 </nav>
       </div>
@@ -379,20 +379,20 @@
 <p>Following the guides above will ensure you have the necessary tools and configurations to proceed with this tutorial.</p>
 <hr>
 <h2 id="installation">Installation</h2>
-<p>TezPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: <a href="https://github.com/tez-capital/tezpeak">https://github.com/tez-capital/tezpeak</a></p>
+<p>MavPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: <a href="https://github.com/mavryk-network/mavpeak">https://github.com/mavryk-network/mavpeak</a></p>
 <blockquote>
 <p>Scroll down to the bottom of the page for the full configuration example.</p>
 </blockquote>
-<h3 id="download-and-install-tezpeak-via-mavbake">Download and install TezPeak via MavBake</h3>
+<h3 id="download-and-install-mavpeak-via-mavbake">Download and install MavPeak via MavBake</h3>
 <pre tabindex="0"><code>mavbake setup --peak
 </code></pre><blockquote>
 <p>You don&rsquo;t need to install the MavBake node or baker services to use MavPay.</p>
 </blockquote>
-<h3 id="setup-tezpeak-configuration">Setup TezPeak configuration</h3>
+<h3 id="setup-mavpeak-configuration">Setup MavPeak configuration</h3>
 <pre tabindex="0"><code>cd /mavpay/peak/ &amp;&amp; touch config.hjson
 </code></pre><p>Open the <code>config.hjson</code> file with your favorite text editor.</p>
-<h5 id="sample-tezpeak-configuration">Sample TezPeak configuration</h5>
-<p>Here&rsquo;s an example of a minimal TezPeak <code>config.hjson</code> file with just MavPay configured:</p>
+<h5 id="sample-mavpeak-configuration">Sample MavPeak configuration</h5>
+<p>Here&rsquo;s an example of a minimal MavPeak <code>config.hjson</code> file with just MavPay configured:</p>
 <pre tabindex="0"><code>{
  listen: 0.0.0.0:8733
  app_root: /mavpay
@@ -402,8 +402,8 @@
      }
  }
 }
-</code></pre><h5 id="full-tezpeak-configuration-examples">Full TezPeak configuration examples</h5>
-<p>Here&rsquo;s the TezPeak configuration with all available MavPay options:</p>
+</code></pre><h5 id="full-mavpeak-configuration-examples">Full MavPeak configuration examples</h5>
+<p>Here&rsquo;s the MavPeak configuration with all available MavPay options:</p>
 <pre tabindex="0"><code>{
  # Id to show in the header
  id: &#34;&#34;
@@ -442,11 +442,11 @@
  # private - assumes private environment, all operations are allowed
  mode: auto
 }
-</code></pre><h2 id="start-tezpeak-and-connect-to-it">Start TezPeak and connect to it</h2>
+</code></pre><h2 id="start-mavpeak-and-connect-to-it">Start MavPeak and connect to it</h2>
 <pre tabindex="0"><code>mavbake start --peak
-</code></pre><p>If you&rsquo;re connecting to the TezPeak GUI from a different computer, you&rsquo;ll need to open a web browser and navigate to <code>http://&lt;your-baker-ip&gt;:8733</code>.</p>
+</code></pre><p>If you&rsquo;re connecting to the MavPeak GUI from a different computer, you&rsquo;ll need to open a web browser and navigate to <code>http://&lt;your-baker-ip&gt;:8733</code>.</p>
 <p>If you&rsquo;re connecting from the same computer, you can use <code>http://127.0.0.1:8733</code> or <code>http://localhost:8733</code>.</p>
-<h2 id="tezpeak-example-screenshot">TezPeak example screenshot</h2>
+<h2 id="mavpeak-example-screenshot">MavPeak example screenshot</h2>
 <p><img src="/mavbake/tutorial/tezpeakexample.png" alt=""></p>
 <hr>
 <p>Any questions/comments/concerns? Please contact the Mavryk Dynamics team on

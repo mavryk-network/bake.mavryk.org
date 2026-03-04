@@ -29,7 +29,7 @@
 <meta itemprop="name" content="&gt; How to Setup">
 <meta itemprop="description" content="How to setup MavPay">
 
-<meta itemprop="wordCount" content="1381">
+<meta itemprop="wordCount" content="1373">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="&gt; How to Setup"/>
 <meta name="twitter:description" content="How to setup MavPay"/>
@@ -409,7 +409,7 @@ wallet that contains only enough Mavryk to pay out delegates.</strong></em></p>
 <hr>
 <h3 id="preparation-step-2-download-files">Preparation: Step 2 <em>Download Files</em></h3>
 <p>Download the software from Github using the link:
-<a href="https://github.com/alis-is/mavpay/releases">https://github.com/alis-is/mavpay/releases</a>. In this repository,
+<a href="https://github.com/mavryk-network/mavpay/releases">https://github.com/mavryk-network/mavpay/releases</a>. In this repository,
 select the correct operating system and system architecture (arm64 or
 amd64). For this example we will be using <em>arm64</em></p>
 <table>
@@ -422,7 +422,7 @@ amd64). For this example we will be using <em>arm64</em></p>
 <p>Note: If you do not know the system architecture you can find out by
 opening a Terminal and executing the command <code>uname -m</code>, and this will
 return the system architecture<code>arm64</code> or <code>amd64</code>.</p>
-<p>The example below displays <em>arm64</em></p>
+<p>The example below displays <em>amd64</em></p>
 <table>
 <thead>
 <tr>
@@ -432,8 +432,8 @@ return the system architecture<code>arm64</code> or <code>amd64</code>.</p>
 </table>
 <p>If you would rather utilize CLI to download the application you will need
 to change directory (cd) to the MavPay directory created in step 1 in
-the terminal, <strong>then</strong> use command <code>wget -q https://raw.githubusercontent.com/alis-is/mavpay/main/install.sh -O /tmp/install.sh &amp;&amp; sh /tmp/install.sh</code></p>
-<p>See example code below (<em>note: input begins after last &lsquo;%&rsquo; character</em>):</p>
+the terminal, <strong>then</strong> use command <code>wget -q https://raw.githubusercontent.com/mavryk-network/mavpay/main/install.sh -O /tmp/install.sh &amp;&amp; sh /tmp/install.sh</code></p>
+<p>See example code below:</p>
 <table>
 <thead>
 <tr>
@@ -445,7 +445,7 @@ the terminal, <strong>then</strong> use command <code>wget -q https://raw.github
 repository</strong></p>
 <p><strong>Next</strong>, you will download the sample configuration
 file &amp; <em>payout_wallet_private.sample.key</em> file from :
-<a href="https://github.com/alis-is/mavpay/blob/main/docs/configuration/">https://github.com/alis-is/mavpay/blob/main/docs/configuration/</a> - <em>or
+<a href="https://github.com/mavryk-network/mavpay/blob/main/docs/configuration/">https://github.com/mavryk-network/mavpay/blob/main/docs/configuration/</a> - <em>or
 you can open file in GitHub and copy text to a text editor</em>.</p>
 <p><em>Note, there are two choices for the configuration files</em>:</p>
 <ol>
@@ -464,11 +464,11 @@ Mavpay)</li>
 <hr>
 <h3 id="preparation-step-3---payout-wallet-optional">Preparation: Step 3 - Payout Wallet (optional)</h3>
 <p><strong>Lastly</strong>, you will need to download the create a new wallet and
-retrieve the private key. We will be using the Temple Wallet extension
+retrieve the private key. We will be using the Mavryk Wallet extension
 to create a new wallet and to get the private key. If you already have a
 payout wallet, or know how, skip this section.</p>
 <ul>
-<li><strong>First</strong>, open <strong>Temple Wallet</strong> and select the icon in upper right</li>
+<li><strong>First</strong>, open <strong>Mavryk Wallet</strong> and select the icon in upper left</li>
 </ul>
 <table>
 <thead>
@@ -488,12 +488,12 @@ payout wallet, or know how, skip this section.</p>
 </thead>
 </table>
 <ul>
-<li><strong>Then</strong>, click the icon in the upper right again</li>
+<li><strong>Then</strong>, click the icon in the upper right</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th><img src="/mavpay/tutorial/mavpayImage8.png" alt="&lt;Access Temple Wallet menu, again.&gt;"></th>
+<th><img src="/mavpay/tutorial/mavpayImage8.png" alt="&lt;Access Mavryk Wallet menu, again.&gt;"></th>
 </tr>
 </thead>
 </table>

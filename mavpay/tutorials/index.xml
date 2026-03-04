@@ -65,7 +65,7 @@ wallet that contains only enough Mavryk to pay out delegates.&lt;/strong&gt;&lt;
 &lt;hr&gt;
 &lt;h3 id=&#34;preparation-step-2-download-files&#34;&gt;Preparation: Step 2 &lt;em&gt;Download Files&lt;/em&gt;&lt;/h3&gt;
 &lt;p&gt;Download the software from Github using the link:
-&lt;a href=&#34;https://github.com/alis-is/mavpay/releases&#34;&gt;https://github.com/alis-is/mavpay/releases&lt;/a&gt;. In this repository,
+&lt;a href=&#34;https://github.com/mavryk-network/mavpay/releases&#34;&gt;https://github.com/mavryk-network/mavpay/releases&lt;/a&gt;. In this repository,
 select the correct operating system and system architecture (arm64 or
 amd64). For this example we will be using &lt;em&gt;arm64&lt;/em&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -78,7 +78,7 @@ amd64). For this example we will be using &lt;em&gt;arm64&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Note: If you do not know the system architecture you can find out by
 opening a Terminal and executing the command &lt;code&gt;uname -m&lt;/code&gt;, and this will
 return the system architecture&lt;code&gt;arm64&lt;/code&gt; or &lt;code&gt;amd64&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The example below displays &lt;em&gt;arm64&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The example below displays &lt;em&gt;amd64&lt;/em&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -88,8 +88,8 @@ return the system architecture&lt;code&gt;arm64&lt;/code&gt; or &lt;code&gt;amd6
 &lt;/table&gt;
 &lt;p&gt;If you would rather utilize CLI to download the application you will need
 to change directory (cd) to the MavPay directory created in step 1 in
-the terminal, &lt;strong&gt;then&lt;/strong&gt; use command &lt;code&gt;wget -q https://raw.githubusercontent.com/alis-is/mavpay/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sh /tmp/install.sh&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;See example code below (&lt;em&gt;note: input begins after last &amp;lsquo;%&amp;rsquo; character&lt;/em&gt;):&lt;/p&gt;
+the terminal, &lt;strong&gt;then&lt;/strong&gt; use command &lt;code&gt;wget -q https://raw.githubusercontent.com/mavryk-network/mavpay/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sh /tmp/install.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;See example code below:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -101,7 +101,7 @@ the terminal, &lt;strong&gt;then&lt;/strong&gt; use command &lt;code&gt;wget -q 
 repository&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Next&lt;/strong&gt;, you will download the sample configuration
 file &amp;amp; &lt;em&gt;payout_wallet_private.sample.key&lt;/em&gt; file from :
-&lt;a href=&#34;https://github.com/alis-is/mavpay/blob/main/docs/configuration/&#34;&gt;https://github.com/alis-is/mavpay/blob/main/docs/configuration/&lt;/a&gt; - &lt;em&gt;or
+&lt;a href=&#34;https://github.com/mavryk-network/mavpay/blob/main/docs/configuration/&#34;&gt;https://github.com/mavryk-network/mavpay/blob/main/docs/configuration/&lt;/a&gt; - &lt;em&gt;or
 you can open file in GitHub and copy text to a text editor&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note, there are two choices for the configuration files&lt;/em&gt;:&lt;/p&gt;
 &lt;ol&gt;
@@ -120,11 +120,11 @@ Mavpay)&lt;/li&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;preparation-step-3---payout-wallet-optional&#34;&gt;Preparation: Step 3 - Payout Wallet (optional)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Lastly&lt;/strong&gt;, you will need to download the create a new wallet and
-retrieve the private key. We will be using the Temple Wallet extension
+retrieve the private key. We will be using the Mavryk Wallet extension
 to create a new wallet and to get the private key. If you already have a
 payout wallet, or know how, skip this section.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;First&lt;/strong&gt;, open &lt;strong&gt;Temple Wallet&lt;/strong&gt; and select the icon in upper right&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First&lt;/strong&gt;, open &lt;strong&gt;Mavryk Wallet&lt;/strong&gt; and select the icon in upper left&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -144,12 +144,12 @@ payout wallet, or know how, skip this section.&lt;/p&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Then&lt;/strong&gt;, click the icon in the upper right again&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Then&lt;/strong&gt;, click the icon in the upper right&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;/mavpay/tutorial/mavpayImage8.png&#34; alt=&#34;&amp;lt;Access Temple Wallet menu, again.&amp;gt;&#34;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&#34;/mavpay/tutorial/mavpayImage8.png&#34; alt=&#34;&amp;lt;Access Mavryk Wallet menu, again.&amp;gt;&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;/table&gt;
@@ -683,20 +683,20 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
 &lt;p&gt;Following the guides above will ensure you have the necessary tools and configurations to proceed with this tutorial.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;TezPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/tez-capital/tezpeak&#34;&gt;https://github.com/tez-capital/tezpeak&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MavPeak GUI supports using MavBake and MavPay simultaneously or by themselves. To run them at the same time simply combine both configurations in the same file as shown here: &lt;a href=&#34;https://github.com/mavryk-network/mavpeak&#34;&gt;https://github.com/mavryk-network/mavpeak&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Scroll down to the bottom of the page for the full configuration example.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;download-and-install-tezpeak-via-mavbake&#34;&gt;Download and install TezPeak via MavBake&lt;/h3&gt;
+&lt;h3 id=&#34;download-and-install-mavpeak-via-mavbake&#34;&gt;Download and install MavPeak via MavBake&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake setup --peak
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;You don&amp;rsquo;t need to install the MavBake node or baker services to use MavPay.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;setup-tezpeak-configuration&#34;&gt;Setup TezPeak configuration&lt;/h3&gt;
+&lt;h3 id=&#34;setup-mavpeak-configuration&#34;&gt;Setup MavPeak configuration&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /mavpay/peak/ &amp;amp;&amp;amp; touch config.hjson
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open the &lt;code&gt;config.hjson&lt;/code&gt; file with your favorite text editor.&lt;/p&gt;
-&lt;h5 id=&#34;sample-tezpeak-configuration&#34;&gt;Sample TezPeak configuration&lt;/h5&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of a minimal TezPeak &lt;code&gt;config.hjson&lt;/code&gt; file with just MavPay configured:&lt;/p&gt;
+&lt;h5 id=&#34;sample-mavpeak-configuration&#34;&gt;Sample MavPeak configuration&lt;/h5&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a minimal MavPeak &lt;code&gt;config.hjson&lt;/code&gt; file with just MavPay configured:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  listen: 0.0.0.0:8733
  app_root: /mavpay
@@ -706,8 +706,8 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
      }
  }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;full-tezpeak-configuration-examples&#34;&gt;Full TezPeak configuration examples&lt;/h5&gt;
-&lt;p&gt;Here&amp;rsquo;s the TezPeak configuration with all available MavPay options:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;full-mavpeak-configuration-examples&#34;&gt;Full MavPeak configuration examples&lt;/h5&gt;
+&lt;p&gt;Here&amp;rsquo;s the MavPeak configuration with all available MavPay options:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
  # Id to show in the header
  id: &amp;#34;&amp;#34;
@@ -746,11 +746,11 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
  # private - assumes private environment, all operations are allowed
  mode: auto
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-tezpeak-and-connect-to-it&#34;&gt;Start TezPeak and connect to it&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-mavpeak-and-connect-to-it&#34;&gt;Start MavPeak and connect to it&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mavbake start --peak
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re connecting to the TezPeak GUI from a different computer, you&amp;rsquo;ll need to open a web browser and navigate to &lt;code&gt;http://&amp;lt;your-baker-ip&amp;gt;:8733&lt;/code&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re connecting to the MavPeak GUI from a different computer, you&amp;rsquo;ll need to open a web browser and navigate to &lt;code&gt;http://&amp;lt;your-baker-ip&amp;gt;:8733&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re connecting from the same computer, you can use &lt;code&gt;http://127.0.0.1:8733&lt;/code&gt; or &lt;code&gt;http://localhost:8733&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;tezpeak-example-screenshot&#34;&gt;TezPeak example screenshot&lt;/h2&gt;
+&lt;h2 id=&#34;mavpeak-example-screenshot&#34;&gt;MavPeak example screenshot&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/mavbake/tutorial/tezpeakexample.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
@@ -771,7 +771,7 @@ a. &lt;code&gt;mavpay test-notify&lt;/code&gt;&lt;/li&gt;
         &lt;h2 id=&#34;keeping-mavpay-up-to-date&#34;&gt;Keeping MavPay Up-to-Date&lt;/h2&gt;
 &lt;p&gt;For access to future releases via Linux CLI, run the following command from within the folder where mavpay is located:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd mavpay
-wget -q https://raw.githubusercontent.com/alis-is/mavpay/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sh /tmp/install.sh
+wget -q https://raw.githubusercontent.com/mavryk-network/mavpay/main/install.sh -O /tmp/install.sh &amp;amp;&amp;amp; sh /tmp/install.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;Any questions/comments/concerns? Please contact the Mavryk Dynamics team on
 &lt;a href=&#34;https://t.me/MavrykNetwork&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
