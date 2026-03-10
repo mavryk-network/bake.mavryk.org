@@ -41,7 +41,7 @@ Synopsis mavbake CLI Copyright © 2026 tez.capital Copyright © 2026 Mavryk Dyna
 This is a modified version of tezbake (https://github.com/tez-capital/tezbake). Licensed under the Server Side Public License (SSPL) v1.
 Options -h, --help help for mavbake -l, --log-level string Sets log level (trace/debug/info/warn/error) (default &#34;info&#34;) --no-color Disable color output -o, --output-format string Sets output log format (json/text/auto) (default &#34;auto&#34;) -p, --path string Path to mavbake instance (default &#34;/mavbake&#34;) --version Prints mavbake version SEE ALSO mavbake apps	- Prints BB CLI apps.">
 
-<meta itemprop="wordCount" content="278">
+<meta itemprop="wordCount" content="262">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="mavbake"/>
 <meta name="twitter:description" content="docs/cmd/mavbake.md## mavbake
@@ -167,8 +167,6 @@ Options -h, --help help for mavbake -l, --log-level string Sets log level (trace
   <a href="/mavbake/reference/cmd/mavbake_apps/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_apps"><span class="">mavbake_apps</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_bootstrap-node-li">
   <a href="/mavbake/reference/cmd/mavbake_bootstrap-node/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_bootstrap-node"><span class="">mavbake_bootstrap-node</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_dal-li">
-  <a href="/mavbake/reference/cmd/mavbake_dal/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_dal"><span class="">mavbake_dal</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_info-li">
   <a href="/mavbake/reference/cmd/mavbake_info/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_info"><span class="">mavbake_info</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_instance-li">
@@ -207,8 +205,6 @@ Options -h, --help help for mavbake -l, --log-level string Sets log level (trace
   <a href="/mavbake/reference/cmd/mavbake_start/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_start"><span class="">mavbake_start</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_stop-li">
   <a href="/mavbake/reference/cmd/mavbake_stop/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_stop"><span class="">mavbake_stop</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_update-dal-profiles-li">
-  <a href="/mavbake/reference/cmd/mavbake_update-dal-profiles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_update-dal-profiles"><span class="">mavbake_update-dal-profiles</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_upgrade-li">
   <a href="/mavbake/reference/cmd/mavbake_upgrade/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_upgrade"><span class="">mavbake_upgrade</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_version-li">
@@ -395,7 +391,6 @@ Licensed under the Server Side Public License (SSPL) v1.</p>
 <ul>
 <li><a href="/mavbake/reference/cmd/mavbake_apps">mavbake apps</a>	 - Prints BB CLI apps.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_bootstrap-node">mavbake bootstrap-node</a>	 - Bootstraps MavBake&rsquo;s Mavryk node.</li>
-<li><a href="/mavbake/reference/cmd/mavbake_dal">mavbake dal</a>	 - Passes args through to dal node app.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_info">mavbake info</a>	 - Prints runtime information about BB.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_instance">mavbake instance</a>	 - Executes command on a specific mavbake instance or enters the instance environment</li>
 <li><a href="/mavbake/reference/cmd/mavbake_list-ledgers">mavbake list-ledgers</a>	 - Prints list of available ledgers.</li>
@@ -414,12 +409,11 @@ Licensed under the Server Side Public License (SSPL) v1.</p>
 <li><a href="/mavbake/reference/cmd/mavbake_signer">mavbake signer</a>	 - Passes args through to signer app.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_start">mavbake start</a>	 - Starts BB.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_stop">mavbake stop</a>	 - Stops BB.</li>
-<li><a href="/mavbake/reference/cmd/mavbake_update-dal-profiles">mavbake update-dal-profiles</a>	 - Updates dal profiles.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_upgrade">mavbake upgrade</a>	 - Upgrades BB.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_version">mavbake version</a>	 - Prints BB CLI version.</li>
 <li><a href="/mavbake/reference/cmd/mavbake_vote">mavbake vote</a>	 - (DEPRECATED) Cast vote for proposal/s.</li>
 </ul>
-<h6 id="auto-generated-by-spf13cobra-on-4-mar-2026">Auto generated by spf13/cobra on 4-Mar-2026</h6>
+<h6 id="auto-generated-by-spf13cobra-on-10-mar-2026">Auto generated by spf13/cobra on 10-Mar-2026</h6>
 
 	
 	

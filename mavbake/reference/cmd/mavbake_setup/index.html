@@ -22,12 +22,12 @@
 <meta name="description" content="docs/cmd/mavbake_setup.md## mavbake setup
 Setups BB.
 Synopsis Installs and configures BB instance.
-mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &amp;#34;main&amp;#34;) --dal Setups dal. --dal-branch string Sets dal configuration. --dal-configuration string Sets dal configuration. (default &amp;#34;{}&amp;#34;) --dal-remote string username:&amp;lt;ssh key file&amp;gt;@address (experimental) --dal-remote-auth string pass|key:&amp;lt;path to key&amp;gt; (experimental) --dal-remote-elevate string only &amp;#39;sudo&amp;#39; supported now (experimental) --dal-version string Sets dal configuration.">
+mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &amp;#34;main&amp;#34;) --disable-post-process Disables post process - app linking node &amp;lt;-&amp;gt; dal. --force Force setup - potentially overwriting existing installation. -h, --help help for setup -i, --id string Id of BB instance. (default &amp;#34;bb-default&amp;#34;) --node Setups node. --node-branch string Sets node configuration.">
 <meta property="og:title" content="mavbake_setup" />
 <meta property="og:description" content="docs/cmd/mavbake_setup.md## mavbake setup
 Setups BB.
 Synopsis Installs and configures BB instance.
-mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --dal Setups dal. --dal-branch string Sets dal configuration. --dal-configuration string Sets dal configuration. (default &#34;{}&#34;) --dal-remote string username:&lt;ssh key file&gt;@address (experimental) --dal-remote-auth string pass|key:&lt;path to key&gt; (experimental) --dal-remote-elevate string only &#39;sudo&#39; supported now (experimental) --dal-version string Sets dal configuration." />
+mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --disable-post-process Disables post process - app linking node &lt;-&gt; dal. --force Force setup - potentially overwriting existing installation. -h, --help help for setup -i, --id string Id of BB instance. (default &#34;bb-default&#34;) --node Setups node. --node-branch string Sets node configuration." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/mavbake/reference/cmd/mavbake_setup/" /><meta property="article:section" content="mavbake" />
 
@@ -36,15 +36,15 @@ mavbake setup [flags] Options --branch string Select package release branch you 
 <meta itemprop="description" content="docs/cmd/mavbake_setup.md## mavbake setup
 Setups BB.
 Synopsis Installs and configures BB instance.
-mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --dal Setups dal. --dal-branch string Sets dal configuration. --dal-configuration string Sets dal configuration. (default &#34;{}&#34;) --dal-remote string username:&lt;ssh key file&gt;@address (experimental) --dal-remote-auth string pass|key:&lt;path to key&gt; (experimental) --dal-remote-elevate string only &#39;sudo&#39; supported now (experimental) --dal-version string Sets dal configuration.">
+mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --disable-post-process Disables post process - app linking node &lt;-&gt; dal. --force Force setup - potentially overwriting existing installation. -h, --help help for setup -i, --id string Id of BB instance. (default &#34;bb-default&#34;) --node Setups node. --node-branch string Sets node configuration.">
 
-<meta itemprop="wordCount" content="295">
+<meta itemprop="wordCount" content="249">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="mavbake_setup"/>
 <meta name="twitter:description" content="docs/cmd/mavbake_setup.md## mavbake setup
 Setups BB.
 Synopsis Installs and configures BB instance.
-mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --dal Setups dal. --dal-branch string Sets dal configuration. --dal-configuration string Sets dal configuration. (default &#34;{}&#34;) --dal-remote string username:&lt;ssh key file&gt;@address (experimental) --dal-remote-auth string pass|key:&lt;path to key&gt; (experimental) --dal-remote-elevate string only &#39;sudo&#39; supported now (experimental) --dal-version string Sets dal configuration."/>
+mavbake setup [flags] Options --branch string Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;) --disable-post-process Disables post process - app linking node &lt;-&gt; dal. --force Force setup - potentially overwriting existing installation. -h, --help help for setup -i, --id string Id of BB instance. (default &#34;bb-default&#34;) --node Setups node. --node-branch string Sets node configuration."/>
 
 
 
@@ -163,8 +163,6 @@ mavbake setup [flags] Options --branch string Select package release branch you 
   <a href="/mavbake/reference/cmd/mavbake_apps/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_apps"><span class="">mavbake_apps</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_bootstrap-node-li">
   <a href="/mavbake/reference/cmd/mavbake_bootstrap-node/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_bootstrap-node"><span class="">mavbake_bootstrap-node</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_dal-li">
-  <a href="/mavbake/reference/cmd/mavbake_dal/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_dal"><span class="">mavbake_dal</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_info-li">
   <a href="/mavbake/reference/cmd/mavbake_info/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_info"><span class="">mavbake_info</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_instance-li">
@@ -203,8 +201,6 @@ mavbake setup [flags] Options --branch string Select package release branch you 
   <a href="/mavbake/reference/cmd/mavbake_start/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_start"><span class="">mavbake_start</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_stop-li">
   <a href="/mavbake/reference/cmd/mavbake_stop/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_stop"><span class="">mavbake_stop</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_update-dal-profiles-li">
-  <a href="/mavbake/reference/cmd/mavbake_update-dal-profiles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_update-dal-profiles"><span class="">mavbake_update-dal-profiles</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_upgrade-li">
   <a href="/mavbake/reference/cmd/mavbake_upgrade/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavbakereferencecmdmavbake_upgrade"><span class="">mavbake_upgrade</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavbakereferencecmdmavbake_version-li">
@@ -380,13 +376,6 @@ mavbake setup [flags] Options --branch string Select package release branch you 
 <pre tabindex="0"><code>mavbake setup [flags]
 </code></pre><h3 id="options">Options</h3>
 <pre tabindex="0"><code>      --branch string                 Select package release branch you want to setup (addets node and signer app only). (default &#34;main&#34;)
-      --dal                           Setups dal.
-      --dal-branch string             Sets dal configuration.
-      --dal-configuration string      Sets dal configuration. (default &#34;{}&#34;)
-      --dal-remote string             username:&lt;ssh key file&gt;@address (experimental)
-      --dal-remote-auth string        pass|key:&lt;path to key&gt;  (experimental)
-      --dal-remote-elevate string     only &#39;sudo&#39; supported now (experimental)
-      --dal-version string            Sets dal configuration. (default &#34;latest&#34;)
       --disable-post-process          Disables post process - app linking node &lt;-&gt; dal.
       --force                         Force setup - potentially overwriting existing installation.
   -h, --help                          help for setup
@@ -413,7 +402,6 @@ mavbake setup [flags] Options --branch string Select package release branch you 
       --signer-version string         Sets signer configuration. (default &#34;latest&#34;)
       --skip-ami-setup                Skip ami setup.
   -u, --user string                   User you want to operate BB under. (default &#34;runner&#34;)
-      --with-dal                      Setup dal node. (experimental)
 </code></pre><h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
 <pre tabindex="0"><code>  -l, --log-level string       Sets log level (trace/debug/info/warn/error) (default &#34;info&#34;)
       --no-color               Disable color output
@@ -424,7 +412,7 @@ mavbake setup [flags] Options --branch string Select package release branch you 
 <ul>
 <li><a href="/mavbake/reference/cmd/mavbake">mavbake</a>	 - mavbake CLI</li>
 </ul>
-<h6 id="auto-generated-by-spf13cobra-on-4-mar-2026">Auto generated by spf13/cobra on 4-Mar-2026</h6>
+<h6 id="auto-generated-by-spf13cobra-on-10-mar-2026">Auto generated by spf13/cobra on 10-Mar-2026</h6>
 
 	
 	
