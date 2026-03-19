@@ -88,8 +88,6 @@
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_setup-ledger/</loc>
   </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_setup-mavsign/</loc>
-  </url><url>
     <loc>/mavbake/reference/cmd/mavbake_setup-soft-wallet/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_signer/</loc>
@@ -101,8 +99,6 @@
     <loc>/mavbake/reference/cmd/mavbake_upgrade/</loc>
   </url><url>
     <loc>/mavbake/reference/cmd/mavbake_version/</loc>
-  </url><url>
-    <loc>/mavbake/reference/cmd/mavbake_vote/</loc>
   </url><url>
     <loc>/mavpay/reference/cmd/mavpay/</loc>
   </url><url>
