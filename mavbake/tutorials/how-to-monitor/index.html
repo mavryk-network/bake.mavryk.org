@@ -29,7 +29,7 @@
 <meta itemprop="name" content="How to Monitor">
 <meta itemprop="description" content="MavBake Monitoring Tutorial">
 
-<meta itemprop="wordCount" content="630">
+<meta itemprop="wordCount" content="400">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Monitor"/>
 <meta name="twitter:description" content="MavBake Monitoring Tutorial"/>
@@ -203,8 +203,6 @@
   <a href="/mavpay/tutorials/how-to-setup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-setup"><span class="">&gt; How to Setup</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-pay-li">
   <a href="/mavpay/tutorials/how-to-pay/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-pay"><span class="">How to Pay Delegators</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-notify-li">
-  <a href="/mavpay/tutorials/how-to-notify/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-notify"><span class="">How to Setup Notifications</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-setup-gui-li">
   <a href="/mavpay/tutorials/how-to-setup-gui/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-setup-gui"><span class="">How to Setup with Peak GUI</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-update-li">
@@ -288,7 +286,6 @@
       <ul>
         <li><a href="#monitor-full-mavbake-node-and-baker-logs-in-real-time">Monitor full MavBake node and baker logs in real time</a></li>
         <li><a href="#monitor-limited-mavbake-node-or-baker-logs-in-real-time">Monitor limited MavBake node or baker logs in real time</a></li>
-        <li><a href="#monitor-mavbake-baker-logs-for-the-next-protocol">Monitor MavBake baker logs for the next protocol</a></li>
         <li><a href="#monitor-full-mavbake-signer-logs-in-real-time">Monitor full MavBake signer logs in real time</a></li>
       </ul>
     </li>
@@ -374,16 +371,6 @@ mavbake node log accuser -f
 </code></pre><p>Monitoring just the <code>node</code> process shows blocks being synchronized in real time by your node.</p>
 <p>Monitoring just the <code>baker</code> process shows all attempts to endorse and bake blocks. The baker process works along with the node process to inject blocks and endorsements into the Mavryk network.</p>
 <p>Monitoring just the <code>accuser</code> process shows the attempts of your node to call our double baking events on the Mavryk network. Normally you should not see anything in this log.</p>
-<h3 id="monitor-mavbake-baker-logs-for-the-next-protocol">Monitor MavBake baker logs for the next protocol</h3>
-<p>During times when Mavryk protocol are being switched out you will notice that there is a <code>baker</code> process as well as a <code>baker-next</code> process. The same is true about the <code>accuser</code> process. The <code>baker-next</code> process is the baker process that will be used when the next protocol is activated. The <code>baker</code> process will be used until the next protocol is activated. The <code>accuser-next</code> process is the accuser process that will be used when the next protocol is activated. The <code>accuser</code> process will be used until the next protocol is activated.</p>
-<p><img src="/mavbake/tutorial/mavbakeNext.png" alt="&lt;MavBake -next protocol services&gt;"></p>
-<pre tabindex="0"><code>mavbake node log baker-next -f
-mavbake node log accuser-next -f
-</code></pre><p>The <code>baker-next</code> process will show one of two things.</p>
-<ol>
-<li>Protocol is waiting to start. This means everyone is waiting for the new proposal to be activated on mainnet. Nothing needs to be done until the new protocol is activated</li>
-<li>The baker process is running like normally. This means the new proposal has already activated and the MavBake needs to be updated to reflect it. There is no penalty for not updating unless you do not update in time for the next proposal. In other words, updating is only necessary when a proposal switch is about to happen. We still recommend that all Mavryk bakers update their MavBake to the latest production version as soon as possible to get the latest Mavkit improvements.</li>
-</ol>
 <h3 id="monitor-full-mavbake-signer-logs-in-real-time">Monitor full MavBake signer logs in real time</h3>
 <p>Using the command below shows everything your Ledger is signing or trying to sign. If there is a hardware wallet issue, this log will confirm it.</p>
 <pre tabindex="0"><code>mavbake signer log -f

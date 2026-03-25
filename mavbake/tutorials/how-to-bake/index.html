@@ -29,7 +29,7 @@
 <meta itemprop="name" content="&gt; How to Bake">
 <meta itemprop="description" content="MavBake Baking Tutorial">
 
-<meta itemprop="wordCount" content="1380">
+<meta itemprop="wordCount" content="1372">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="&gt; How to Bake"/>
 <meta name="twitter:description" content="MavBake Baking Tutorial"/>
@@ -203,8 +203,6 @@
   <a href="/mavpay/tutorials/how-to-setup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-setup"><span class="">&gt; How to Setup</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-pay-li">
   <a href="/mavpay/tutorials/how-to-pay/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-pay"><span class="">How to Pay Delegators</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-notify-li">
-  <a href="/mavpay/tutorials/how-to-notify/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-notify"><span class="">How to Setup Notifications</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-setup-gui-li">
   <a href="/mavpay/tutorials/how-to-setup-gui/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-mavpaytutorialshow-to-setup-gui"><span class="">How to Setup with Peak GUI</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-mavpaytutorialshow-to-update-li">
@@ -389,9 +387,8 @@ mavbake bootstrap-node https://snapshots.mavryk.network/rolling BLVo8bPM1MU2h6dn
 <blockquote>
 <p>The <code>&lt;block_hash&gt;</code> argument is optional but encouraged. If you don&rsquo;t want to borther with this protection, use the second method below which will also be faster.</p>
 </blockquote>
-<p>Verify the hash/checksum provided by the snapshot provider to ensure the snapshot is valid. You can find the correct hashes for all blocks on Mavryk blockchain explorers such as:
-<a href="https://tzkt.io/blocks">https://tzkt.io/blocks</a>
-<a href="https://tzstats.com/">https://tzstats.com/</a></p>
+<p>Verify the hash/checksum provided by the snapshot provider to ensure the snapshot is valid. You can find the correct hashes for all blocks on Mavryk blockchain explorer:
+<a href="https://nexus.mavryk.org/explorer">https://nexus.mavryk.org/explorer</a></p>
 <p>Simply search for the block level in the search field and verify the hash of the block matches the hash provided by the snapshot provider.</p>
 <h3 id="start-mavryk-node">Start Mavryk node</h3>
 <p>After importing the snapshot, you need to start your node and wait until it&rsquo;s fully synchronized before importing your Ledger key.</p>
@@ -399,10 +396,10 @@ mavbake bootstrap-node https://snapshots.mavryk.network/rolling BLVo8bPM1MU2h6dn
 </code></pre><p>After starting the node, run the following command over and over every few minutes and monitor the &ldquo;level&rdquo; displayed.</p>
 <pre tabindex="0"><code>mavbake info
 </code></pre><blockquote>
-<p>Level refers to the latest block number on mainnet. Navigate to <a href="https://tzkt.io">https://tzkt.io</a> or <a href="https://tzstats.com">https://tzstats.com</a> and observe the latest block. Once the level in your command matches the latest block on your blockchain explorer, your node is in full sync and you can keep following the steps below.</p>
+<p>Level refers to the latest block number on mainnet. Navigate to <a href="https://nexus.mavryk.org">https://nexus.mavryk.org</a> and observe the latest block. Once the level in your command matches the latest block on your blockchain explorer, your node is in full sync and you can keep following the steps below.</p>
 </blockquote>
 <blockquote>
-<p>Both <a href="https://tzkt.io">https://tzkt.io</a> or <a href="https://tzstats.com">https://tzstats.com</a> provide Basenet and Testnet block explorers as well. Make sure you&rsquo;re looking at the right explorer.</p>
+<p><a href="https://nexus.mavryk.org">https://nexus.mavryk.org</a> provides Basenet and Testnet block explorers as well. Make sure you&rsquo;re looking at the right explorer.</p>
 </blockquote>
 <h3 id="import-ledger-key-or-soft-key-and-register-as-baker">Import Ledger key or soft key and register as baker</h3>
 <p>Now that your node is in full sync, you can proceed with the most important part: (1) your baker parameters import into your baker node and (2) submit your baker registration on the blockchain.</p>
